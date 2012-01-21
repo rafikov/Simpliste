@@ -1,6 +1,8 @@
 /* "Simpliste" template. Renat Rafikov. http://cssr.ru/simpliste/ Skin designed and coded by Egor Kubasov. http://egorkubasov.ru */
 
+/* Webfonts */
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Lobster);
+/* End webfonts */
 
 /* CSS reset. Based on HTML5 boilerplate reset http://html5boilerplate.com/  */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display:block; }
@@ -107,7 +109,7 @@ table { border-collapse:collapse; border-spacing:0; }
 
 /* [Skin "Modern Dark: Yellow"] */
 .container {
-  max-width:900px;
+  max-width:1300px;
   margin:0 auto;
 }
 
@@ -117,7 +119,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 
 .logo {
-  font-family:'Lobster';
+  font-family:'Lobster', tahoma, sans-serif;
   float:left;
   display:inline-block;
   padding:0 0 1em;
@@ -182,7 +184,7 @@ table { border-collapse:collapse; border-spacing:0; }
 
 /* Skin appearance */
 body {
-  font-family:'Ubuntu';
+  font-family:'Ubuntu', tahoma, sans-serif;
   color:#d5d5d5;
   background:#131313;
 }
@@ -197,7 +199,7 @@ ul li, ol li {
 
 .hero h1 {
   font-size:26px;
-  font-family:'Lobster';
+  font-family:'Lobster', tahoma, sans-serif;
   font-style:normal;
   color:#fff600;
 }

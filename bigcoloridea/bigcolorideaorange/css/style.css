@@ -107,9 +107,9 @@ table { border-collapse:collapse; border-spacing:0; }
 /* End helper classes */
 
 
-/* [Skin "Blue"] */
+/* [Skin "Big Color Idea: Orange"] */
 .container {
-  max-width:900px;
+  max-width:1300px;
   margin:0 auto;
 }
 
@@ -119,13 +119,13 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 
 .logo {
-  font-family:'Ubuntu';
+  font-family:'Ubuntu', Tahoma, sans-serif;
   float:left;
   display:inline-block;
   padding:0 0 1em;
-  border-bottom:1px solid #00b4ff;
+  border-bottom:1px solid #ff7800;
   font-size:36px;
-  color:#00b4ff;
+  color:#ff7800;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -146,7 +146,7 @@ table { border-collapse:collapse; border-spacing:0; }
 
 .menu_main li.active,
 .menu_main li.active a {
-  color:#00b4ff;
+  color:#v;
   text-decoration:none;
   cursor:default;
 }
@@ -156,7 +156,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 
 .footer {
-  border-top:1px solid #00b4ff;
+  border-top:1px solid #ff7800;
   padding:2em 2% 3em 2%;
   color:#666;
 }
@@ -181,21 +181,21 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .menu_bottom li.active,
 .menu_bottom li.active a {
-  color:#00b4ff;
+  color:#ff7800;
   text-decoration:none;
   cursor:default;
 }
 
 /* Skin appearance */
 body {
-  font-family:'Ubuntu';
+  font-family:'Ubuntu', Tahoma, sans-serif;
   color:#000000;
   background:#eeeeee;
 }
 
-a { color:#00b4ff; }
+a { color:#ff7800; }
 a:hover { color:#999999; }
-a:visited { color:#00b4ff; }
+a:visited { color:#ff7800; }
 
 ul li, ol li {
   padding:0 0 0.4em 0;
@@ -203,19 +203,19 @@ ul li, ol li {
 
 .hero h1 {
   font-size:26px;
-  font-family:'Ubuntu';
+  font-family:'Ubuntu', Tahoma, sans-serif;
   font-style:bold;
-  color:#00b4ff;
+  color:#ff7800;
 }
 
 h1, h2 {
   font-weight:normal;
-  color:#00b4ff;
+  color:#ff7800;
 }
 
 h3, h4, h5, h6 {
   font-weight:bold;
-  color:#00b4ff;
+  color:#ff7800;
 }
 
 h1 {
@@ -229,13 +229,13 @@ h1 {
 
 a.button,
 .button {
-  border:3px solid #00b4ff;
+  border:3px solid #ff7800;
   text-align:center; 
   text-decoration:none;
   -webkit-box-shadow:#000 0px 0px 1px;
   -moz-box-shadow:#000 0px 0px 1px;
   box-shadow:#000 0px 0px 1px;
-  background:#8fd7f5;
+  background:#f5bf8f;
   color:#fff;
   padding:5px 20px;
   font-family:'Ubuntu';
@@ -247,12 +247,12 @@ a.button,
 a.button:hover,
 .button:hover {
   color:#fff;  
-  background:#77d1f7;
+  background:#f8a75f;
 }
 a.button:active,
 .button:active {
   color:#fff;
-  background: #30c0fc;
+  background: #fc9030;
 }
 
 .table {
@@ -263,18 +263,18 @@ a.button:active,
   font-weight:normal;
   text-align:left;
   font-size:1.2em;
-  background:#8fd7f5;
-  border:1px solid #00b4ff;
+  background:#f5bf8f;
+  border:1px solid #ff7800;
   color:#666;
 }
 .table td {
   padding:5px 7px;
 }
 .table tr {
-  border-bottom:1px solid #00b4ff;
+  border-bottom:1px solid #ff7800;
 }
 .table tr:last-child {
-  border-bottom:1px solid #00b4ff;
+  border-bottom:1px solid #ff7800;
 }
 
 .warning {
@@ -307,7 +307,9 @@ a.button:active,
   -moz-box-shadow:#666 1px 1px 2px;
   box-shadow:#666 1px 1px 2px;
 }
+
 /* [End skin] */
+
 
 
 @media only screen and (max-width:480px) { /* Smartphone */

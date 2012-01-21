@@ -107,25 +107,29 @@ table { border-collapse:collapse; border-spacing:0; }
 /* End helper classes */
 
 
-/* [Skin "Modern Dark: Red"] */
+/* [Skin "Big Color Idea - Dark Blue"] */
 .container {
   max-width:1300px;
   margin:0 auto;
 }
 
 .header {
-  margin:1px 0 3em 0;
+  margin:1px 0 1em 0;
   padding:2em 2% 0 2%;
 }
 
 .logo {
-  font-family:'Lobster', tahoma, sans-serif;
+  font-family:'Ubuntu', Tahoma, sans-serif;
   float:left;
   display:inline-block;
   padding:0 0 1em;
-  border-bottom:1px solid #ff0000;
-  font-size:18px;
-  color:#ff0000;
+  border-bottom:1px solid #1200ff;
+  font-size:36px;
+  color:#1200ff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align:center;
 }
 
 .menu_main {
@@ -142,7 +146,7 @@ table { border-collapse:collapse; border-spacing:0; }
 
 .menu_main li.active,
 .menu_main li.active a {
-  color:#ff0000;
+  color:#1200ff;
   text-decoration:none;
   cursor:default;
 }
@@ -152,7 +156,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 
 .footer {
-  border-top:1px solid #ff0000;
+  border-top:1px solid #1200ff;
   padding:2em 2% 3em 2%;
   color:#666;
 }
@@ -177,21 +181,21 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .menu_bottom li.active,
 .menu_bottom li.active a {
-  color:#ff0000;
+  color:#1200ff;
   text-decoration:none;
   cursor:default;
 }
 
 /* Skin appearance */
 body {
-  font-family:'Ubuntu', tahoma, sans-serif;
-  color:#d5d5d5;
-  background:#131313;
+  font-family:'Ubuntu', Tahoma, sans-serif;
+  color:#000000;
+  background:#eeeeee;
 }
 
-a { color:#ff0000; }
-a:hover { color:#d5d5d5; }
-a:visited { color:#ff0000; }
+a { color:#1200ff; }
+a:hover { color:#999999; }
+a:visited { color:#1200ff; }
 
 ul li, ol li {
   padding:0 0 0.4em 0;
@@ -199,19 +203,19 @@ ul li, ol li {
 
 .hero h1 {
   font-size:26px;
-  font-family:'Lobster', tahoma, sans-serif;
-  font-style:normal;
-  color:#ff0000;
+  font-family:'Ubuntu', Tahoma, sans-serif;
+  font-style:bold;
+  color:#1200ff;
 }
 
 h1, h2 {
   font-weight:normal;
-  color:#ff0000;
+  color:#1200ff;
 }
 
 h3, h4, h5, h6 {
   font-weight:bold;
-  color:#ff0000;
+  color:#1200ff;
 }
 
 h1 {
@@ -225,31 +229,30 @@ h1 {
 
 a.button,
 .button {
-  border:1px solid #ff0000;
+  border:3px solid #1200ff;
   text-align:center; 
   text-decoration:none;
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  border-radius:4px;
   -webkit-box-shadow:#000 0px 0px 1px;
   -moz-box-shadow:#000 0px 0px 1px;
   box-shadow:#000 0px 0px 1px;
-  background:#a30a0a;
+  background:#968ff5;
   color:#fff;
-  padding:12px 20px;
-  font-family:verdana, sans-serif;
+  padding:5px 20px;
+  font-family:'Ubuntu';
+  font-weight: 700;
+  font-size: 15px;
   text-shadow:1px 1px 1px #2e2e2e;
   display:inline-block;
 }
 a.button:hover,
 .button:hover {
   color:#fff;  
-  background:#d10505;
+  background:#6a5ff8;
 }
 a.button:active,
 .button:active {
-  color:#181818;
-  background: #761010;
+  color:#fff;
+  background: #3e30fc;
 }
 
 .table {
@@ -260,46 +263,51 @@ a.button:active,
   font-weight:normal;
   text-align:left;
   font-size:1.2em;
-  background:#2b2b2b;
-  border:1px solid #ddd;
+  background:#968ff5;
+  border:1px solid #1200ff;
+  color:#666;
 }
 .table td {
   padding:5px 7px;
 }
 .table tr {
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid #1200ff;
 }
 .table tr:last-child {
-  border:0;
+  border-bottom:1px solid #1200ff;
 }
 
 .warning {
-  border:1px solid #ec252e;
-  color:#fff;
+  border:3px solid #ff0000;
+  color:#000;
   padding:8px 14px;
-  background:#291111;
-  -webkit-border-radius:8px;
-  -moz-border-radius:8px;
-  border-radius:8px;
+  background:transperent;
+  font-size: 16px;
+  -webkit-box-shadow:#666 1px 1px 2px;
+  -moz-box-shadow:#666 1px 1px 2px;
+  box-shadow:#666 1px 1px 2px;
 }
 .success {
-  border:1px solid #399f16;
-  color:#fff;
-  background:#172113;
+  border:3px solid #399f16;
+  color:#000;
+  background:transperent;
   padding:8px 14px;
-  -webkit-border-radius:8px;
-  -moz-border-radius:8px;
-  border-radius:8px;
+  font-size: 16px;
+  -webkit-box-shadow:#666 1px 1px 2px;
+  -moz-box-shadow:#666 1px 1px 2px;
+  box-shadow:#666 1px 1px 2px;
 }
 .message {
-  border:1px solid #f1edcf;
-  color:#878473;
-  background:#2b2a28;
+  border:3px solid #fff600;
+  color:#000;
+  background:transperent;
   padding:8px 14px;
-  -webkit-border-radius:8px;
-  -moz-border-radius:8px;
-  border-radius:8px;
+  font-size: 16px;
+  -webkit-box-shadow:#666 1px 1px 2px;
+  -moz-box-shadow:#666 1px 1px 2px;
+  box-shadow:#666 1px 1px 2px;
 }
+
 /* [End skin] */
 
 
