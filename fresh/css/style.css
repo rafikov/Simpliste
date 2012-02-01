@@ -103,7 +103,7 @@ table { border-collapse:collapse; border-spacing:0; }
 /* End helper classes */
 
 
-/* [Skin "Simple"] */
+/* [Skin "Fresh"] */
 .container {
   max-width:1300px;
   margin:0 auto;
@@ -348,7 +348,7 @@ a.button,
   margin:5px 0 0 0;
   position:relative;
 }
-.button:before {
+a.button:before {
   content:"";
   display:block;
   position:absolute;
