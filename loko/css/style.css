@@ -149,7 +149,7 @@ table { border-collapse:collapse; border-spacing:0; }
 .footer {
   border-top:1px solid #666;
   padding:2em 2% 3em 2%;
-  color:#666;
+  color:white;
 }
 
 .copyright {
@@ -269,6 +269,7 @@ a.button:active,
   font-weight:normal;
   text-align:left;
   font-size:1.2em;
+  color:green;
   background:#ffffff;
   background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#F7F7F7));
   background:-webkit-linear-gradient(#ffffff, #F7F7F7);
@@ -354,10 +355,12 @@ a.button:active,
     width:100%;
     float:none;
     text-align:center;
+    color: white;
   }
 
   .footer  {
     padding-bottom:0;
+    color: white;
   }
   
   .menu_bottom {
