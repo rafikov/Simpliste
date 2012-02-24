@@ -1,0 +1,273 @@
+/* Skin "Humble" by Renat Rafikov */
+body {
+  font-family:arial, sans-serif;
+  color:#000;
+  background:#58595b;
+}
+
+a { color:#000; }
+a:hover { color:#444; }
+a:visited { color:#666; }
+
+ul li, ol li {
+  padding:0 0 0.4em 0;
+}
+
+
+.container {
+  max-width:1300px;
+  margin:0 auto;
+}
+
+.header {
+  margin:13px 0 11px 0;
+  padding:1em 2% 0 2%;
+  border-top:1px solid #fff;
+}
+
+.logo {
+  float:left;
+  display:inline-block;
+  font-size:24px;
+  color:#fff;
+}
+
+.menu_main {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0.3em 0 0 0;
+  font-size:15px;
+}
+
+.menu_main li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+
+.menu_main li a {
+  color:#fff;
+}
+.menu_main li a:hover {
+  color:#dad9d9;
+}
+.menu_main li a:visited {
+  color:#b3b3b3;
+}
+
+.menu_main li.active,
+.menu_main li.active a {
+  color:#fff;
+  text-decoration:none;
+  cursor:default;
+  position:relative;
+}
+
+.menu_main li.active:before {
+  content:"";
+  display:block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  position:absolute;
+  left:50%;
+  bottom:-12px;
+  margin:0 0 0 -2px;
+}
+
+
+.hero {
+  border:2px solid #fff;
+  margin:0 1% 24px 1%;
+  padding:10px 0 0 1%;
+  color:#fff;
+}
+.hero a {
+  color:#fff;
+}
+.hero a:hover {
+  color:#eee;
+}
+
+.article {
+  background:#fff;
+  padding:7px 0 3em 2%;
+}
+
+.footer {
+  padding:12px 2% 2em 2%;
+  color:#aaaaaa;
+}
+
+.copyright {
+  width:49%;
+  float:left;
+}
+
+.menu_bottom {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0;
+  padding:0;
+}
+.menu_bottom li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+
+.menu_bottom li a {
+  color:#fff;
+}
+.menu_bottom li a:hover {
+  color:#dad9d9;
+}
+.menu_bottom li a:visited {
+  color:#b3b3b3;
+}
+
+.menu_bottom li.active,
+.menu_bottom li.active a {
+  color:#fff;
+  text-decoration:none;
+  cursor:default;
+  position:relative;
+}
+
+.menu_bottom li.active:before {
+  content:"";
+  display:block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  left:50%;
+  top:-12px;
+  margin:0 0 0 -2px;
+}
+
+.hero h1 {
+  font-size:22px;
+  color:#fff;
+}
+
+.hero h1, .hero h2, .hero h3, .hero h4 {
+  color:#fff;
+}
+
+h1, h2 {
+  font-weight:normal;
+  color:#010101;
+}
+
+h3, h4, h5, h6 {
+  font-weight:bold;
+  color:#010101;
+}
+
+h1 {
+  font-size:22px;
+}
+
+.form label {
+  display:inline-block;
+  padding:0 0 4px 0;
+}
+
+a.button,
+.button {
+  border:1px solid #000;
+  text-align:center; 
+  text-decoration:none;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  -webkit-box-shadow:#000 0px 0px 1px;
+  -moz-box-shadow:#000 0px 0px 1px;
+  box-shadow:#000 0px 0px 1px;
+  background:#fff;
+  color:#000;
+  padding:7px 12px;
+  font-family:verdana, sans-serif;
+  display:inline-block;
+}
+a.button:hover,
+.button:hover {
+  border:2px solid #000;
+  padding:6px 11px;
+  color:#616161;  
+}
+a.button:active,
+.button:active {
+  color:#000;
+  border:1px solid #000;
+  padding:7px 12px;
+  -webkit-box-shadow:#888 0px 3px 2px inset;
+  -moz-box-shadow:#888 0px 3px 2px inset;
+  box-shadow:#888 0px 3px 2px inset;
+}
+
+.table {
+  width:100%;
+}
+.table th {
+  padding:5px 7px;
+  font-weight:normal;
+  text-align:left;
+  font-size:15px;
+}
+.table td {
+  padding:5px 7px;
+}
+.table tr {
+  border-bottom:1px solid #000;
+}
+.table tr:last-child {
+  border:0;
+}
+
+.warning {
+  border:1px solid #8e011e;
+  color:#fff;
+  padding:8px 14px;
+  background:#c21c3f;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+.success {
+  border:1px solid #1c8b31;
+  color:#fff;
+  background:#1c8b31;
+  padding:8px 14px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+.message {
+  border:1px solid #ac9701;
+  color:#fff;
+  background:#e2cf48;
+  padding:8px 14px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+
+
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+  .header {
+    margin-top:3px;
+  }
+  .menu_main a {
+    display:inline-block;
+    padding:2px 7px 7px 7px!important;
+  }
+}
+
+@media only screen and (max-width:768px) { /* Tablet custom styles */
+}

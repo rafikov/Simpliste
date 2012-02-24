@@ -1,0 +1,21 @@
+/* Skin styles for IE */
+
+/*
+  IE < 8 not supported by Simpliste skins. But you can manually fix some problems using the styles below. Either copy them into your style.css file or make links to ie.css file from your site pages.
+  "/" is a hack used to apply styles to IE 7 and below.
+*/
+
+/* For IE 7 "inline-block" property has to be replaced with "inline" */
+.menu_main li,
+.menu_bottom li {
+  /display:inline;
+}
+
+/* If you don't like the way headers' default styles look in IE 7 */
+h1,h2,h3,h4,h5,h6 {
+  /display:block; 
+  /clear:both; 
+  /margin:0.7em 0;
+}
+
+/* End skin styles for IE */

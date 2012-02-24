@@ -1,0 +1,229 @@
+/* Skin "Fruit juice" by Renat Rafikov */
+body {
+  font-family:arial, sans-serif;
+  color:#111;
+}
+
+a { color:#ff7d01; }
+a:hover { text-decoration:none; }
+a:visited { color:#ea206c; }
+
+ul li, ol li {
+  padding:0 0 0.4em 0;
+}
+
+
+.container {
+  max-width:1300px;
+  margin:0 auto;
+}
+
+.header {
+  margin:0 0 2em 0;
+  padding:0 2% 0 2%;
+}
+
+.logo {
+  float:left;
+  display:inline-block;
+  font-size:27px;
+  color:#ff7d01;
+  font-family:tahoma, sans-serif;
+  text-transform:uppercase;
+  padding:16px 0 0 0;
+}
+
+.menu_main {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0;
+}
+
+.menu_main li {
+  display:inline-block;
+  margin:0 0 0 2px;
+}
+
+.menu_main li a {
+  display:inline-block;
+  padding:30px 8px 10px 8px;
+  background:#ffebc0;
+  font-family:georgia, serif;
+  color:#ff7d01;
+  -webkit-border-radius:0 0 4px 4px;
+  -moz-border-radius:0 0 4px 4px;
+  border-radius:0 0 4px 4px;
+}
+
+.menu_main li a:hover {
+  background:#fff4dd;
+}
+
+.menu_main li.active,
+.menu_main li.active a {
+  text-decoration:none;
+  cursor:default;
+  background:none;
+}
+
+.info {
+  padding:0 0 1em 2%;
+}
+
+.footer {
+  padding:2em 2% 3em 2%;
+  color:#ff7d01;
+}
+
+.copyright {
+  width:49%;
+  float:left;
+  font-family:georgia, serif;
+  font-style:italic;
+  font-size:14px;
+}
+
+.menu_bottom {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0;
+  padding:0;
+}
+.menu_bottom li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+.menu_bottom a,
+.menu_bottom a:visited {
+  font-family:georgia, serif;
+  font-style:italic;
+  color:#ff7d01;
+}
+.menu_bottom li.active,
+.menu_bottom li.active a {
+  text-decoration:none;
+  cursor:default;
+}
+
+
+.hero h1 {
+  font-size:19px;
+  font-family:georgia, serif;
+  font-style:italic;
+  background:#ffebc0;
+  display:inline-block;
+}
+.hero p {
+  font-family:georgia, serif;
+  font-style:italic;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size:21px;
+}
+
+h1, h2 {
+  font-size:19px;
+  font-weight:normal;
+  font-family:georgia, serif;
+  font-style:italic;
+}
+
+.col_33 h2 {
+  background:#ffebc0;
+  display:inline-block;
+}
+
+h3, h4, h5, h6 {
+  font-weight:bold;
+  font-family:georgia, serif;
+  font-style:italic;
+}
+
+
+.form label {
+  display:inline-block;
+  padding:0 0 4px 0;
+}
+
+a.button,
+.button {
+  border:0;
+  text-align:center; 
+  text-decoration:none;
+  background:#8aac00;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color:#fff;
+  padding:9px 17px;
+  font-family:verdana, sans-serif;
+  display:inline-block;
+  font-style:normal;
+}
+a.button:hover,
+.button:hover {
+  color:#fff;
+  background:#ff7d01;
+}
+a.button:active,
+.button:active {
+  color:#b25700;
+  text-shadow:1px 1px 1px #ffcc9c;
+  -webkit-box-shadow:#da6a00 0px 2px 0 inset;
+  -moz-box-shadow:#da6a00 0px 2px 0 inset;
+  box-shadow:#da6a00 0px 2px 0 inset;
+  background:#ff7d01;
+}
+
+.table {
+  width:100%;
+}
+.table th {
+  padding:5px 7px;
+  font-weight:normal;
+  text-align:left;
+  font-size:16px;
+  background:#ffebc0;
+}
+.table td {
+  padding:5px 7px;
+}
+.table tr {
+  border-bottom:1px solid #ff7d01;
+}
+.table tr:last-child {
+  border:0;
+}
+
+.warning {
+  color:#fff;
+  padding:8px 14px;
+  background:#ff3701;
+}
+.success {
+  color:#fff;
+  background:#8aac00;
+  padding:8px 14px;
+}
+.message {
+  background:#ffebc0;
+  padding:8px 14px;
+}
+
+
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+  .menu_main li a {
+    display:inline-block;
+    padding:7px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width:768px) { /* Tablet custom styles */
+}

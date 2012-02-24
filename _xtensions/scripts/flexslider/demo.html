@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="charset=utf-8">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  
+  <script src="jquery.flexslider-min.js"></script>
+  <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+  
+  <!-- Hook up the FlexSlider -->
+  <script type="text/javascript">
+    $(window).load(function() {
+      $('.flexslider').flexslider();
+    });
+  </script>
+  
+  <!-- Demo styles, don't copy -->
+  <style type="text/css">
+    article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+    body {line-height: 1;  font-size: 100%;}
+    ol, ul {list-style: none; margin:0; padding:0;}
+
+    .col_100 {width: 80%; max-width: 800px; margin: 0 auto;}
+  </style>
+</head>
+<body>
+
+  <div class="col_100">    
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="http://flex.madebymufffin.com/images/inacup_samoa.jpg" />
+          <p class="flex-caption">Captions and cupcakes. Winning combination.</p>
+        </li>
+        <li>
+          <a href="http://flex.madebymufffin.com"><img src="http://flex.madebymufffin.com/images/inacup_pumpkin.jpg" /></a>
+          <p class="flex-caption">This image is wrapped in a link!</p>
+        </li>
+        <li>
+          <img src="http://flex.madebymufffin.com/images/inacup_donut.jpg" />
+        </li>
+        <li>
+          <img src="http://flex.madebymufffin.com/images/inacup_vanilla.jpg" />
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,229 @@
+/* Skin "Simple" by Renat Rafikov */
+body {
+  font-family:arial, sans-serif;
+  color:#333;
+}
+
+a { color:#004dd9; }
+a:hover { color:#ea0000; }
+a:visited { color:#551a8b; }
+
+ul li, ol li {
+  padding:0 0 0.4em 0;
+}
+
+
+.container {
+  max-width:1300px;
+  margin:0 auto;
+}
+
+.header {
+  margin:1px 0 3em 0;
+  padding:2em 2% 0 2%;
+}
+
+.logo {
+  float:left;
+  display:inline-block;
+  padding:0 0 1em;
+  border-bottom:1px solid #000;
+  font-size:18px;
+  color:#ea0000;
+}
+
+.menu_main {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0.3em 0 0 0;
+}
+.menu_main a,
+.menu_main a:visited {
+}
+.menu_main a:hover,
+.menu_main a:hover:visited {
+}
+.menu_main li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+.menu_main li.active,
+.menu_main li.active a {
+  color:#000;
+  text-decoration:none;
+  cursor:default;
+}
+
+
+.info {
+  padding:0 0 1em 2%;
+}
+
+.hero {}
+.hero h1 {
+  font-size:26px;
+  font-family:georgia, serif;
+  font-style:italic;
+  color:#EA0000;
+}
+
+.article {}
+
+.footer {
+  border-top:1px solid #666;
+  padding:2em 2% 3em 2%;
+  color:#666;
+}
+
+.copyright {
+  width:49%;
+  float:left;
+  font-family:georgia, serif;
+  font-style:italic;
+}
+
+.menu_bottom {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0;
+  padding:0;
+}
+.menu_bottom a,
+.menu_bottom a:visited {
+}
+.menu_bottom a:hover,
+.menu_bottom a:hover:visited {
+}
+.menu_bottom li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+.menu_bottom li.active,
+.menu_bottom li.active a {
+  color:#666;
+  text-decoration:none;
+  cursor:default;
+}
+
+h1, h2 {
+  font-weight:normal;
+  color:#000;
+}
+h1 {
+  font-size:22px;
+}
+h3, h4, h5, h6 {
+  font-weight:bold;
+  color:#000;
+}
+
+.form label {
+  display:inline-block;
+  padding:0 0 4px 0;
+}
+
+a.button,
+.button {
+  border:1px solid #d00303;
+  text-align:center; 
+  text-decoration:none;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  -webkit-box-shadow:#000 0px 0px 1px;
+  -moz-box-shadow:#000 0px 0px 1px;
+  box-shadow:#000 0px 0px 1px;
+  background:#ea0000;
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ea0000), to(#d00303));
+  background:-webkit-linear-gradient(#ea0000, #d00303);
+  background:-moz-linear-gradient(#ea0000, #d00303);
+  background:-ms-linear-gradient(#ea0000, #d00303);
+  background:-o-linear-gradient(#ea0000, #d00303);
+  background:linear-gradient(#ea0000, #d00303);
+  color:#fff;
+  padding:12px 20px;
+  font-family:verdana, sans-serif;
+  text-shadow:1px 1px 1px #d03302;
+  display:inline-block;
+}
+a.button:hover,
+.button:hover {
+  color:#fff;  
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#d00303), to(#ea0000));
+  background:-webkit-linear-gradient(#d00303, #ea0000);
+  background:-moz-linear-gradient(#d00303, #ea0000);
+  background:-ms-linear-gradient(#d00303, #ea0000);
+  background:-o-linear-gradient(#d00303, #ea0000);
+  background:linear-gradient(#d00303, #ea0000);
+}
+a.button:active,
+.button:active {
+  color:#8c1515;
+  text-shadow:1px 1px 1px #ffaeae;
+  -webkit-box-shadow:#a10000 0px -3px 3px inset;
+  -moz-box-shadow:#a10000 0px -3px 3px inset;
+  box-shadow:#a10000 0px -3px 3px inset;
+}
+
+.table {
+  width:100%;
+}
+.table th {
+  padding:5px 7px;
+  font-weight:normal;
+  text-align:left;
+  font-size:1.2em;
+  background:#ffffff;
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#F7F7F7));
+  background:-webkit-linear-gradient(#ffffff, #F7F7F7);
+  background:-moz-linear-gradient(#ffffff, #F7F7F7);
+  background:-ms-linear-gradient(#ffffff, #F7F7F7);
+  background:-o-linear-gradient(#ffffff, #F7F7F7);
+  background:linear-gradient(#ffffff, #F7F7F7);
+}
+.table td {
+  padding:5px 7px;
+}
+.table tr {
+  border-bottom:1px solid #ddd;
+}
+.table tr:last-child {
+  border:0;
+}
+
+.warning {
+  border:1px solid #ec252e;
+  color:#fff;
+  padding:8px 14px;
+  background:#EA0000;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+}
+.success {
+  border:1px solid #399f16;
+  color:#fff;
+  background:#399f16;
+  padding:8px 14px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+}
+.message {
+  border:1px solid #f1edcf;
+  color:#000;
+  background:#fbf8e3;
+  padding:8px 14px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+}
+
+
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+}
+
+@media only screen and (max-width:768px) { /* Tablet custom styles */
+}

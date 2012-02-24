@@ -1,0 +1,226 @@
+/* Skin "Tea with milk" by Renat Rafikov */
+body {
+  font-family:arial, sans-serif;
+  color:#222;
+  background:#f3f1e5;
+}
+
+a { color:#52a6c7; }
+a:hover { color:#878787; }
+a:visited { color:#9c52c7; }
+
+ul li, ol li {
+  padding:0 0 0.4em 0;
+}
+
+
+.container {
+  max-width:1300px;
+  margin:0 auto;
+}
+
+.header {
+  margin:1px 0 3em 0;
+  padding:2em 2% 0 2%;
+}
+
+.logo {
+  float:left;
+  display:inline-block;
+  font-size:22px;
+}
+
+.menu_main {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0.3em 0 0 0;
+}
+
+.menu_main li {
+  display:inline-block;
+  padding:0 0 0 7px;
+  border-left:1px solid #222;
+}
+.menu_main li:first-child {
+  border:0;
+}
+.menu_main a,
+.menu_main a:visited {
+  color:#222;
+}
+.menu_main li.active,
+.menu_main li.active a {
+  color:#8faf6c;
+  text-decoration:none;
+  cursor:default;
+}
+
+.info {
+  padding:0 0 1em 2%;
+}
+
+.hero {
+  background:#fff;
+  border:6px solid #f7f6ee;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 8px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 8px;
+  padding:5px 0 10px 2%;
+  margin: 0 2% 0 0;
+}
+
+.footer {
+  border-top:2px solid #f7f6ee;
+  padding:2em 2% 3em 2%;
+}
+
+.copyright {
+  width:49%;
+  float:left;
+  font-family:tahoma, sans-serif;
+}
+
+.menu_bottom {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0;
+  padding:0;
+}
+.menu_bottom li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+.menu_bottom a,
+.menu_bottom a:visited {
+  color:#222;
+}
+.menu_bottom li.active,
+.menu_bottom li.active a {
+  color:#8faf6c;
+  text-decoration:none;
+  cursor:default;
+}
+
+
+.hero h1 {
+  font-size:29px;
+}
+
+h1, h2 {
+  font-family:tahoma, sans-serif;
+  font-weight:normal;
+}
+
+h3, h4, h5, h6 {
+  font-family:tahoma, sans-serif;
+  font-weight:bold;
+}
+
+h1 {
+  font-size:22px;
+}
+
+.form label {
+  display:inline-block;
+  padding:0 0 4px 0;
+}
+
+a.button,
+.button {
+  border:1px solid #6aa12e;
+  text-align:center; 
+  text-decoration:none;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  border-radius:15px;
+  -webkit-box-shadow:#e4ffc6 0px 2px 3px inset;
+  -moz-box-shadow:#e4ffc6 0px 2px 3px inset;
+  box-shadow:#e4ffc6 0px 2px 3px inset;
+  background:#88bf4c;
+  color:#e2eed6;
+  padding:7px 15px;
+  font-family:verdana, sans-serif;
+  text-shadow:1px 1px 0px #6aa12e;
+  display:inline-block;
+}
+a.button:hover,
+.button:hover {
+  color:#fff;  
+  -webkit-box-shadow:#e4ffc6 0px 1px 1px inset;
+  -moz-box-shadow:#e4ffc6 0px 1px 1px inset;
+  box-shadow:#e4ffc6 0px 1px 1px inset;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#88bf4c), to(#B6DE8A));
+  background: -webkit-linear-gradient(#88bf4c, #B6DE8A);
+  background: -moz-linear-gradient(#88bf4c, #B6DE8A);
+  background: -ms-linear-gradient(#88bf4c, #B6DE8A);
+  background: -o-linear-gradient(#88bf4c, #B6DE8A);
+  background: linear-gradient(#88bf4c, #B6DE8A);
+}
+a.button:active,
+.button:active {
+  color:#65982d;
+  text-shadow:1px 1px 1px #b9e38c;
+  -webkit-box-shadow:#ef420c 0px -3px 3px inset;
+  -moz-box-shadow:#ef420c 0px -3px 3px inset;
+  box-shadow:#ef420c 0px -3px 3px inset;
+  -webkit-box-shadow:#53841e 0px 2px 3px inset;
+  -moz-box-shadow:#53841e 0px 2px 3px inset;
+  box-shadow:#53841e 0px 2px 3px inset;
+  background:#88bf4c;
+}
+
+.table {
+  width:100%;
+}
+.table th {
+  padding:5px 7px;
+  font-weight:bold;
+  text-align:left;
+}
+
+.table td {
+  padding:5px 7px;
+}
+.table tr {
+  background:#eaeade;
+}
+.table tr:nth-child(even) {
+  background:#f8f7f2;
+}
+.table tr:first-child {
+  background:none;
+}
+.table tr:last-child {
+  border:0;
+}
+
+.warning {
+  border:1px solid #ec252e;
+  color:#fff;
+  padding:8px 14px;
+  background:#bb5f5f;
+  border:3px solid #b74545;
+}
+.success {
+  color:#fff;
+  background:#8faf6c;
+  padding:8px 14px;
+  border:3px solid #a9c987;  
+}
+.message {
+  background:#f8f7f2;
+  padding:8px 14px;
+  border:3px solid #ece9d8;
+}
+
+
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+  .header {
+    padding:10px 0;
+  }
+}
+
+@media only screen and (max-width:768px) { /* Tablet custom styles */
+}

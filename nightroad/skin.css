@@ -1,0 +1,224 @@
+/* Skin "Night road" by Renat Rafikov */
+body {
+  background:#171612;
+  font-family:arial, sans-serif;
+  color:#7f7c77;
+}
+
+a { color:#7f7c77; }
+a:hover { color:#fefefe; }
+a:visited { color:#6a6762; }
+
+ul li, ol li {
+  padding:0 0 0.4em 0;
+}
+
+
+.container {
+  max-width:1300px;
+  margin:0 auto;
+}
+
+.header {
+  margin:1px 0 3em 0;
+  padding:2em 2% 0 2%;
+  border-top:4px solid #169fe5;
+}
+
+.logo {
+  float:left;
+  display:inline-block;
+  border-bottom:1px solid #000;
+  font-size:18px;
+  color:#169fe5;
+}
+
+.menu_main {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0.3em 0 0 0;
+}
+
+.menu_main li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+
+.menu_main li a {
+  color:#778493;
+}
+
+.menu_main li a:hover {
+  color:#169fe5;
+}
+
+.menu_main li.active,
+.menu_main li.active a {
+  color:#fff;
+  text-decoration:none;
+  cursor:default;
+}
+
+.info {
+  padding:0 0 2em 2%;
+}
+
+.hero {
+  color:#778493;
+  border-bottom:1px solid #169fe5;
+  margin:0 2% 40px 0;
+  padding:0 0 10px 0;
+}
+.hero a { color:#778493; }
+.hero a:hover { color:#fefefe; }
+.hero a:visited { color:#5f6e7f; }
+
+.footer {
+  border-top:1px solid #169fe5;
+  padding:2em 2% 3em 2%;
+  color:#169fe5;
+}
+
+.copyright {
+  width:49%;
+  float:left;
+  font-family:georgia, serif;
+}
+
+.menu_bottom {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0;
+  padding:0;
+}
+.menu_bottom li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+.menu_bottom li a {
+  color:#778493;
+}
+.menu_bottom li a:hover {
+  color:#169fe5;
+}
+.menu_bottom li.active,
+.menu_bottom li.active a {
+  color:#fff;
+  text-decoration:none;
+  cursor:default;
+}
+
+
+.hero h1 {
+  font-size:24px;
+  color:#dde5ef;
+}
+
+h1, h2 {
+  font-weight:normal;
+  color:#fefefe;
+  font-family:georgia, serif;
+}
+
+h3, h4, h5, h6 {
+  font-weight:normal;
+  color:#fefefe;
+  font-family:georgia, serif;
+}
+
+h1 {
+  font-size:22px;
+}
+
+.form label {
+  display:inline-block;
+  padding:0 0 4px 0;
+}
+
+a.button,
+a.button:visited,
+.button {
+  border:0;
+  text-align:center; 
+  text-decoration:none;
+  -webkit-box-shadow:#000 0px 0px 8px inset;
+  -moz-box-shadow:#000 0px 0px 8px inset;
+  box-shadow:#000 0px 0px 8px inset;
+  background:#169fe5;
+  color:#d1efff;
+  padding:7px 14px;
+  font-family:verdana, sans-serif;
+  display:inline-block;
+}
+a.button:hover,
+.button:hover {
+  color:#fff;  
+  -webkit-box-shadow:#000 0px 0px 3px inset;
+  -moz-box-shadow:#000 0px 0px 3px inset;
+  box-shadow:#000 0px 0px 3px inset;
+}
+a.button:active,
+.button:active {
+  color:#094766;
+  text-shadow:1px 1px 1px #fff;
+  -webkit-box-shadow:#000 0px 3px 4px inset;
+  -moz-box-shadow:rgba(0, 0, 0, 0.66) 0px 3px 4px inset;
+  box-shadow:#000 0px 3px 4px inset;
+}
+
+.table {
+  width:100%;
+}
+.table th {
+  padding:5px 7px;
+  font-weight:normal;
+  text-align:left;
+  font-size:16px;
+  color:#778493;
+}
+.table td {
+  padding:5px 7px;
+}
+.table tr {
+  border-bottom:1px solid #7f7c77;
+}
+.table tr:first-child {
+  border-bottom:1px solid #169fe5;
+}
+.table tr:last-child {
+  border:0;
+}
+
+.warning {
+  color:#fff;
+  padding:8px 14px;
+  background:#ea0021;
+  -webkit-box-shadow:#000 0px 0px 5px inset;
+  -moz-box-shadow:#000 0px 0px 5px inset;
+  box-shadow:#000 0px 0px 5px inset;
+}
+.success {
+  color:#fff;
+  background:#399f16;
+  padding:8px 14px;
+  -webkit-box-shadow:#000 0px 0px 5px inset;
+  -moz-box-shadow:#000 0px 0px 5px inset;
+  box-shadow:#000 0px 0px 5px inset;
+}
+.message {
+  color:#776800;
+  background:#ecd747;
+  padding:8px 14px;
+  -webkit-box-shadow:#000 0px 0px 5px inset;
+  -moz-box-shadow:#000 0px 0px 5px inset;
+  box-shadow:#000 0px 0px 5px inset;
+}
+
+
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+}
+
+@media only screen and (max-width:768px) { /* Tablet custom styles */
+}

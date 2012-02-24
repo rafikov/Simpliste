@@ -1,0 +1,226 @@
+/* Skin "Glimpse" by Renat Rafikov */
+body {
+  font-family:arial, sans-serif;
+  color:#898989;
+  background:#eeeeee;
+}
+
+a { color:#1b737d; }
+a:hover { color:#278691; text-decoration:none;}
+a:visited { color:#1b327d; }
+
+ul li, ol li {
+  padding:0 0 0.4em 0;
+}
+
+
+.container {
+  max-width:1300px;
+  margin:0 auto;
+}
+
+.header {
+  margin:1px 0 0 0;
+  padding:2em 2% 3em 2%;
+  background:#fff;
+  border-left:1px solid #dedede;
+  border-right:1px solid #dedede;
+}
+
+.logo {
+  float:left;
+  display:inline-block;
+  font-size:18px;
+  color:#c7c5c6;
+}
+
+.menu_main {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0.3em 0 0 0;
+  font-weight:bold;
+}
+
+.menu_main li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+
+.menu_main a,
+.menu_main a:visited {
+  color:#1b737d;
+}
+
+.menu_main li.active,
+.menu_main li.active a {
+  color:#898989;
+  text-decoration:none;
+  cursor:default;
+}
+.hero {
+  background:#fff;
+  border-left:1px solid #dedede;
+  border-right:1px solid #dedede;
+  border-bottom:1px solid #dedede;
+  padding:0 0 1em 2%;
+}
+
+.article {
+  padding:0 0 2em 2%;
+}
+
+.footer {
+  padding:2em 2% 3em 2%;
+  background:#fff;
+  border-left:1px solid #dedede;
+  border-right:1px solid #dedede;
+  border-top:1px solid #dedede;
+}
+
+.copyright {
+  width:49%;
+  float:left;
+  font-style:italic;
+}
+
+.menu_bottom {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0;
+  padding:0;
+  font-weight:bold;
+}
+.menu_bottom a,
+.menu_bottom a:visited {
+  color:#1b737d;
+}
+.menu_bottom li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+.menu_bottom li.active,
+.menu_bottom li.active a {
+  color:#666;
+  text-decoration:none;
+  cursor:default;
+}
+
+
+.hero h1 {
+  font-size:20px;
+  font-style:italic;
+  display:inline-block;
+  clear:both;
+  background:#eee;
+  margin-bottom: 0;
+}
+
+h1, h2 {
+  font-weight:normal;
+}
+
+h3, h4, h5, h6 {
+  font-weight:bold;
+}
+
+h1 {
+  font-size:22px;
+}
+
+.form label {
+  display:inline-block;
+  padding:0 0 4px 0;
+}
+
+a.button,
+.button {
+  border:6px solid #898989;
+  text-align:center; 
+  text-decoration:none;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  background:#bfbfbf;
+  color:#fff;
+  padding:6px 15px;
+  font-family:verdana, sans-serif;
+  text-shadow:1px 1px 0px #898989;
+  display:inline-block;
+}
+a.button:hover,
+.button:hover {
+  color:#898989;
+  text-shadow:none;
+  background:-webkit-gradient(linear, 0 0, center center, from(#c9c9c9), to(#bfbfbf));
+  background:-webkit-linear-gradient(#c9c9c9 50%, #bfbfbf 50%);
+  background:-moz-linear-gradient(#c9c9c9 50%, #bfbfbf 50%);
+  background:-ms-linear-gradient(#c9c9c9 50%, #bfbfbf 50%);
+  background:-o-linear-gradient(#c9c9c9 50%, #bfbfbf 50%);
+  background:linear-gradient(#c9c9c9 50%, #bfbfbf 50%);
+}
+a.button:active,
+.button:active {
+  color:#8c1515;
+  text-shadow:none;
+  background:#898989;
+  color:#dedede;
+  text-shadow:none;
+  -webkit-box-shadow:#454545 0px 0px 7px inset;
+  -moz-box-shadow:#454545 0px 0px 7px inset;
+  box-shadow:#454545 0px 0px 7px inset;
+}
+
+.table {
+  width:100%;
+}
+.table th {
+  padding:5px 7px;
+  font-weight:normal;
+  text-align:left;
+  font-size:1.2em;
+}
+.table td {
+  padding:5px 7px;
+}
+.table tr {
+  border-bottom:1px solid #ddd;
+}
+.table tr:last-child {
+  border:0;
+}
+
+.warning {
+  color:#fff;
+  padding:9px 14px;
+  background:#dca623;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+.success {
+  color:#fff;
+  background:#578647;
+  padding:9px 14px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+.message {
+  background:#fff;
+  padding:9px 14px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+
+
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+  .header {
+    padding-bottom:0;
+  }
+}
+
+@media only screen and (max-width:768px) { /* Tablet custom styles */
+}

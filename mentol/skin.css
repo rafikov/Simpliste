@@ -1,0 +1,234 @@
+/* Skin "Mentol" by Renat Rafikov */
+
+/* Webfonts */
+@import url(http://fonts.googleapis.com/css?family=Kelly+Slab&subset=latin,cyrillic);
+/* End webfonts */
+
+
+body {
+  background:#fbfbf1;
+  font-family:arial, sans-serif;
+  color:#7d7b71;
+}
+
+a { color:#7d7b71; }
+a:hover { color:#67e594; }
+a:visited { color:#8d739e; }
+
+ul li, ol li {
+  padding:0 0 0.4em 0;
+}
+
+.container {
+  max-width:1300px;
+  margin:0 auto;
+}
+
+.header {
+  margin:1px 0 3em 0;
+  padding:2em 2% 0 2%;
+}
+
+.logo {
+  float:left;
+  display:inline-block;
+  font-size:18px;
+  color:#67e594;
+}
+
+.menu_main {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:-0.3em 0 0 0;
+}
+
+.menu_main ul {
+  width:auto;
+  border:2px solid #f1eee7;
+  display: inline-block;
+  padding:10px 17px 10px 10px;
+}
+
+.menu_main li {
+  display:inline-block;
+  margin:0 0 0 7px;
+  font-weight:bold;
+  padding:0;
+}
+
+.menu_main li a,
+.menu_main li a:visited {
+  color:#8d8b84;
+}
+.menu_main li a:hover,
+.menu_main li a:visited:hover {
+  color:#67e594;
+}
+
+.menu_main li.active,
+.menu_main li.active a:hover,
+.menu_main li.active a {
+  color:#52504a;
+  text-decoration:none;
+  cursor:default;
+}
+
+.info {
+  padding:0 0 1em 2%;
+}
+
+.footer {
+  padding:2em 2% 3em 2%;
+  color:#666;
+}
+
+.copyright {
+  width:49%;
+  float:left;
+  font-family:'Kelly Slab', georgia, serif;
+  color:#67e594;
+  font-size:14px;
+}
+
+.menu_bottom {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0;
+  padding:0;
+}
+.menu_bottom li {
+  display:inline-block;
+  margin:0 0 0 7px;
+  font-weight:bold;
+}
+.menu_bottom li a,
+.menu_bottom li a:visited {
+  color:#8d8b84;
+}
+.menu_bottom li a:hover,
+.menu_bottom li a:visited:hover {
+  color:#67e594;
+}
+
+.menu_bottom li.active,
+.menu_bottom li.active a:hover,
+.menu_bottom li.active a {
+  color:#52504a;
+  text-decoration:none;
+  cursor:default;
+}
+
+
+.hero h1 {
+  font-size:29px;  
+  color:#67e594;
+}
+
+h1, h2 {
+  font-family:'Kelly Slab', georgia, serif;
+  font-weight:normal;
+  color:#67e594;
+}
+
+h3, h4, h5, h6 {
+  font-family:'Kelly Slab', georgia, serif;
+  font-weight:normal;
+  color:#67e594;
+}
+
+h1 {
+  font-size:22px;
+}
+
+.form label {
+  display:inline-block;
+  padding:0 0 4px 0;
+}
+
+a.button,
+.button {
+  border:1px solid #51d480;
+  text-align:center; 
+  text-decoration:none;
+  background:#67e594;
+  color:#fff;
+  padding:10px 20px;
+  font-family:verdana, sans-serif;
+  display:inline-block;
+}
+a.button:hover,
+.button:hover {
+  color:#fff;  
+  background:#38C76B;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#67e594), to(#38C76B));
+  background: -webkit-linear-gradient(#67e594, #38C76B);
+  background: -moz-linear-gradient(#67e594, #38C76B);
+  background: -ms-linear-gradient(#67e594, #38C76B);
+  background: -o-linear-gradient(#67e594, #38C76B);
+  background: linear-gradient(#67e594, #38C76B);
+  border:1px solid #3ab566;
+  text-shadow:1px 1px 0px #51d480;
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0px 0px 2px;
+  -moz-box-shadow: rgba(0,0,0,0.2) 0px 0px 2px;
+  box-shadow: rgba(0,0,0,0.2) 0px 0px 2px;
+}
+a.button:active,
+.button:active {
+  color:#35b060;
+  background:#67e594;
+  text-shadow:1px 1px 1px #b6efca;
+  -webkit-box-shadow:#51d480 0px 0 3px inset;
+  -moz-box-shadow:#51d480 0px 0 3px inset;
+  box-shadow:#51d480 0px 0 3px inset;
+  border:1px solid #51d480;
+}
+
+.table {
+  width:100%;
+}
+.table th {
+  padding:5px 7px;
+  font-weight:normal;
+  text-align:left;
+  font-size:16px;
+}
+.table td {
+  padding:8px 7px;
+}
+.table tr {
+  border-bottom:1px solid #dddddd;
+}
+
+.warning {
+  color:#fff;
+  padding:9px 14px;
+  background:#d12c33;
+  -webkit-box-shadow: #8d8b84 0px 0px 6px inset;
+  -moz-box-shadow: #8d8b84 0px 0px 6px inset;
+  box-shadow: #8d8b84 0px 0px 6px inset;
+}
+.success {
+  color:#fff;
+  background:#67e594;
+  padding:9px 14px;
+  -webkit-box-shadow: #8d8b84 0px 0px 6px inset;
+  -moz-box-shadow: #8d8b84 0px 0px 6px inset;
+  box-shadow: #8d8b84 0px 0px 6px inset;
+}
+.message {
+  color:#8d8b84;
+  background:#f0f1e1;
+  padding:9px 14px;
+  -webkit-box-shadow: #8d8b84 0px 0px 6px inset;
+  -moz-box-shadow: #8d8b84 0px 0px 6px inset;
+  box-shadow: #8d8b84 0px 0px 6px inset;
+}
+
+
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+}
+
+@media only screen and (max-width:768px) { /* Tablet custom styles */
+}
