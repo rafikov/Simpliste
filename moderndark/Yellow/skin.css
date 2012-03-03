@@ -1,0 +1,204 @@
+/* Skin "Modern Dark: Yellow" by Egor Kubasov. http://egorkubasov.ru */
+
+/* Webfonts */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Lobster);
+/* End Webfonts */
+
+body {
+  font-family:'Ubuntu';
+  color:#d5d5d5;
+  background:#131313;
+}
+
+a { color:#fff600; }
+a:hover { color:#d5d5d5; }
+a:visited { color:#fff600; }
+
+ul li, ol li {
+  padding:0 0 0.4em 0;
+}
+
+.container {
+  max-width:900px;
+  margin:0 auto;
+}
+
+.header {
+  margin:1px 0 3em 0;
+  padding:2em 2% 0 2%;
+}
+
+.logo {
+  font-family:'Lobster';
+  float:left;
+  display:inline-block;
+  padding:0 0 1em;
+  border-bottom:1px solid #fff600;
+  font-size:18px;
+  color:#fff600;
+}
+
+.menu_main {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0.3em 0 0 0;
+}
+
+.menu_main li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+
+.menu_main li.active,
+.menu_main li.active a {
+  color:#fff600;
+  text-decoration:none;
+  cursor:default;
+}
+
+.info {
+  padding:0 0 1em 2%;
+}
+
+.footer {
+  border-top:1px solid #fff600;
+  padding:2em 2% 3em 2%;
+  color:#666;
+}
+
+.copyright {
+  width:49%;
+  float:left;
+  font-family:georgia, serif;
+  font-style:italic;
+}
+
+.menu_bottom {
+  width:50%;
+  float:right;
+  text-align:right;
+  margin:0;
+  padding:0;
+}
+.menu_bottom li {
+  display:inline-block;
+  margin:0 0 0 7px;
+}
+.menu_bottom li.active,
+.menu_bottom li.active a {
+  color:#fff600;
+  text-decoration:none;
+  cursor:default;
+}
+
+.hero h1 {
+  font-size:26px;
+  font-family:'Lobster';
+  font-style:normal;
+  color:#fff600;
+}
+
+h1, h2 {
+  font-weight:normal;
+  color:#fff600;
+}
+
+h3, h4, h5, h6 {
+  font-weight:bold;
+  color:#fff600;
+}
+
+h1 {
+  font-size:22px;
+}
+
+.form label {
+  display:inline-block;
+  padding:0 0 4px 0;
+}
+
+a.button,
+.button {
+  border:1px solid #fff600;
+  text-align:center; 
+  text-decoration:none;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  -webkit-box-shadow:#000 0px 0px 1px;
+  -moz-box-shadow:#000 0px 0px 1px;
+  box-shadow:#000 0px 0px 1px;
+  background:#a39e0a;
+  color:#fff;
+  padding:12px 20px;
+  font-family:verdana, sans-serif;
+  text-shadow:1px 1px 1px #2e2e2e;
+  display:inline-block;
+}
+a.button:hover,
+.button:hover {
+  color:#fff;  
+  background:#d1ca05;
+}
+a.button:active,
+.button:active {
+  color:#181818;
+  background: #767210;
+}
+
+.table {
+  width:100%;
+}
+.table th {
+  padding:5px 7px;
+  font-weight:normal;
+  text-align:left;
+  font-size:1.2em;
+  background:#2b2b2b;
+  border:1px solid #ddd;
+}
+.table td {
+  padding:5px 7px;
+}
+.table tr {
+  border-bottom:1px solid #ddd;
+}
+.table tr:last-child {
+  border:0;
+}
+
+.warning {
+  border:1px solid #ec252e;
+  color:#fff;
+  padding:8px 14px;
+  background:#291111;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+}
+.success {
+  border:1px solid #399f16;
+  color:#fff;
+  background:#172113;
+  padding:8px 14px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+}
+.message {
+  border:1px solid #f1edcf;
+  color:#878473;
+  background:#2b2a28;
+  padding:8px 14px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+}
+
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+}
+
+
+@media only screen and (max-width:768px) { /* Tablet custom styles*/
+}
