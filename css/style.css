@@ -80,10 +80,13 @@ ul li, ol li {
   float:left;
   background:#f3fcff;
   text-align:center;
-  color:#D3D3D3;
+  color:#c6f0fd;
 }
 .lang li a {
-  color:#bbb;
+  color:#c6f0fd;
+}
+.lang li a:hover {
+  color:#65d8fc;
 }
 
 .standarts_badges {
@@ -161,45 +164,42 @@ ul li {
 
 a.button,
 .button {
-  border:1px solid #d00303;
+  border:0;
   text-align:center; 
   text-decoration:none;
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  border-radius:4px;
-  -webkit-box-shadow:#000 0px 0px 1px;
-  -moz-box-shadow:#000 0px 0px 1px;
-  box-shadow:#000 0px 0px 1px;
-  background:#ea0000;
-  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ea0000), to(#d00303));
-  background:-webkit-linear-gradient(#ea0000, #d00303);
-  background:-moz-linear-gradient(#ea0000, #d00303);
-  background:-ms-linear-gradient(#ea0000, #d00303);
-  background:-o-linear-gradient(#ea0000, #d00303);
-  background:linear-gradient(#ea0000, #d00303);
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+  background:#f90000;
   color:#fff;
-  padding:12px 20px;
+  padding:4px 10px;
   font-family:verdana, sans-serif;
-  text-shadow:1px 1px 1px #d03302;
   display:inline-block;
+  font-size:11px;
 }
 a.button:hover,
 .button:hover {
-  color:#fff;  
-  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#d00303), to(#ea0000));
-  background:-webkit-linear-gradient(#d00303, #ea0000);
-  background:-moz-linear-gradient(#d00303, #ea0000);
-  background:-ms-linear-gradient(#d00303, #ea0000);
-  background:-o-linear-gradient(#d00303, #ea0000);
-  background:linear-gradient(#d00303, #ea0000);
+  background:#fb3232;
 }
 a.button:active,
 .button:active {
+  background:#ea0000;
   color:#8c1515;
-  text-shadow:1px 1px 1px #ffaeae;
-  -webkit-box-shadow:#a10000 0px -3px 3px inset;
-  -moz-box-shadow:#a10000 0px -3px 3px inset;
-  box-shadow:#a10000 0px -3px 3px inset;
+  text-shadow:0px 1px 1px rgba(255,255,255,0.8);
+  -webkit-box-shadow:rgba(0,0,0,0.4) 0px -2px 0px inset;
+  -moz-box-shadow:rgba(0,0,0,0.4) 0px -2px 0px inset;
+  box-shadow:rgba(0,0,0,0.4) 0px -2px 0px inset;
+}
+
+a.button_demo {
+  background:#1477bb;
+}
+a.button_demo:hover {
+  background:#1788d5;
+}
+a.button_demo:active {
+  background:#1477bb;
+  color:#101547;
 }
 
 .table {
