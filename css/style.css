@@ -407,6 +407,12 @@ a.button { color:auto; }
 }
 
 
+.addthis_toolbox {
+  display: inline-block;
+  margin: 0 0 -0.3em 6em;
+  opacity: 0.5;
+}
+
 @media only screen and (min-width:1600px) { /* 3 columns */
   .container {
     width:1500px;
@@ -456,6 +462,9 @@ a.button { color:auto; }
     margin-bottom:24px;
   }
 
+  .addthis_toolbox {
+    margin-bottom:0;
+  }
 }
 
 @media only screen and (max-width:480px) { /* Smartphone */
