@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="../../../_www/css/style.css">
+  <title></title>  
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<style>
+.link_nav {
+  display:none;
+}
+    
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+  .link_nav {
+    display:block;
+  }
+
+  .menu_main ul {
+    display:none;
+  } 
+}
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header clearfix">
+      <div class="logo">.Simpliste</div>
+
+      <nav class="menu_main">
+        <a href="#go_nav" class="link_nav">Menu</a>
+        <ul>
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="#">Skins</a></li>
+          <li><a href="#">Samples</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="info">
+      <article class="hero clearfix">
+        <div class="col_100">
+          <h1>The footer navigation anchor with link in the header</h1>
+          <p>Top navigation can hide data on mobile devices with small resolutions. To avoid this, we can place a link to the footer navigation and hide the navigation in the header. Sometimes there is only one navigation block used to achive this result, which has fixed positioning or absolutely positioned for desktop devices.</p>
+          
+          <p>Try <strong>changing width of your browser window</strong> to see this method in action. And use the <strong>source code of this page</strong> as your guide.</p>
+        </div>
+      </article>
+
+
+      <article class="article clearfix">
+        <div class="col_66">
+          <h2>HTML</h2>
+          <p>
+            Add a link in your header with <strong>link_nav</strong> class and <strong>#go_nav</strong> href value. Name it as you like. It's <strong>Menu</strong> in this demo.
+          </p>    
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;nav</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"menu_main"</span><span class="sh_keyword">&gt;</span></li><li>  <span class="sh_keyword">&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#go_nav"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"link_nav"</span><span class="sh_keyword">&gt;</span>Menu<span class="sh_keyword">&lt;/a&gt;</span></li><li>  <span class="sh_keyword">&lt;ul&gt;</span></li><li>    <span class="sh_keyword">&lt;li</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"active"</span><span class="sh_keyword">&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>About<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>    <span class="sh_keyword">&lt;li&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>Skins<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>    <span class="sh_keyword">&lt;li&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>Samples<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>    <span class="sh_keyword">&lt;li&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>Contacts<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>  <span class="sh_keyword">&lt;/ul&gt;</span></li><li><span class="sh_keyword">&lt;/nav&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">&lt;nav class="menu_main"&gt;
+  &lt;a href="#go_nav" class="link_nav"&gt;Menu&lt;/a&gt;
+  &lt;ul&gt;
+    &lt;li class="active"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Skins&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Samples&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre></div></div>
+          
+          <p>Add id <strong>go_nav</strong> to your footer navigation.</p>
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;nav</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"menu_bottom"</span><span class="sh_keyword">&gt;</span></li><li>  <span class="sh_keyword">&lt;ul</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"go_nav"</span><span class="sh_keyword">&gt;</span></li><li>    <span class="sh_keyword">&lt;li</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"active"</span><span class="sh_keyword">&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>About<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>    <span class="sh_keyword">&lt;li&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>Skins<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>    <span class="sh_keyword">&lt;li&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>Samples<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>    <span class="sh_keyword">&lt;li&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>Contacts<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>  <span class="sh_keyword">&lt;/ul&gt;</span></li><li><span class="sh_keyword">&lt;/nav&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">&lt;nav class="menu_bottom"&gt;
+  &lt;ul id="go_nav"&gt;
+    &lt;li class="active"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Skins&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Samples&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre></div></div>
+          
+          
+          <h2>CSS</h2>
+          
+          <p>Add styles for desktop and mobile phones.</p>
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_css snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_selector">.link_nav</span> <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">display:</span><span class="sh_value">none</span>;</li><li><span class="sh_cbracket">}</span></li><li>    </li><li>@media only screen and <span class="sh_symbol">(</span>max<span class="sh_symbol">-</span>width<span class="sh_symbol">:</span>480px<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span> <span class="sh_comment">/* Smartphone custom styles */</span></li><li>  <span class="sh_value">.link_nav</span> {</li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>  <span class="sh_cbracket">}</span></li><li></li><li>  <span class="sh_selector">.menu_main</span> ul <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">none</span>;</li><li>  <span class="sh_cbracket">}</span> </li><li>}</li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">.link_nav {
+  display:none;
+}
+    
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+  .link_nav {
+    display:block;
+  }
+
+  .menu_main ul {
+    display:none;
+  } 
+}</pre></div></div>
+      
+        </div>
+
+
+        <div class="clearfix"></div>
+
+      </article>
+    </div>
+    
+    <footer class="footer clearfix">
+      <div class="copyright"><a href="http://cssr.ru/simpliste/">Keep it simplest</a></div>
+
+      <nav class="menu_bottom">
+        <ul id="go_nav">
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="#">Skins</a></li>
+          <li><a href="#">Samples</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </div>
+  
+<!-- Don't copy. For demo only -->
+<link rel="stylesheet" href="http://syntaxhighlight.in/shi/css/shi_default.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://syntaxhighlight.in/shi/js/shi_jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="../../../_www/css/style.css">
+  <title></title>  
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+$(
+  function(){
+    $("body").addClass("js");
+  
+    $(".link_nav").click(
+      function(){
+        $("body").toggleClass("mobile_nav");
+      }
+    );
+  }
+)
+</script>
+<style>
+.link_nav {
+  display:none;
+}
+.link_nav:before {
+  content:"» ";
+}
+  
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+  .js .link_nav {
+    display:block;
+    position:fixed;
+    left:0px;
+    top:5px;
+    margin: 0 0 0 -1px;
+    
+    background:#fff;
+    background:rgba(255,255,255,0.9);
+    border:1px solid #666;
+    border:1px solid rgba(0,0,0,0.6);
+    border-left: 0 none;    
+    z-index: 100;    
+    
+    -moz-transition: all 1s; 
+    -webkit-transition: all 1s;  
+    -ms-transition: all 1s;  
+    -o-transition: all 1s;  
+    transition: all 1s;
+  }
+
+  .js .menu_main > ul {
+    position:fixed;
+    width:65%;
+    left:-65%;
+    top:0;
+    margin-left:-1px;
+    
+    background:#fff;
+    background:rgba(255,255,255,0.9);
+    border:1px solid #666;
+    border:1px solid rgba(0,0,0,0.6);
+    border-left:0;
+    
+    -moz-transition: all 1s; 
+    -webkit-transition: all 1s;  
+    -ms-transition: all 1s;  
+    -o-transition: all 1s;  
+    transition: all 1s;
+  }  
+  .js .menu_main ul li {
+    display:block;
+    text-align:left;
+  }
+  /* Second level menu */
+  .js .menu_main ul ul {
+    display:block;
+    margin-left:1.5em;
+    position:static;
+  }  
+  
+  .js .header,
+  .js .info,
+  .js .footer {
+    width:96%;
+    margin-left:0%;
+    
+    -moz-transition: margin 1s; 
+    -webkit-transition: margin 1s;  
+    -ms-transition: margin 1s;  
+    -o-transition: margin 1s;  
+    transition: margin 1s;
+  }
+  
+  
+  /* Navigation is opened */
+  .mobile_nav .container {
+    overflow-x: hidden;
+    width:100%;
+  }
+  .mobile_nav .header,
+  .mobile_nav .info,
+  .mobile_nav .footer {
+    margin-left: 70%;
+  }
+  
+  .mobile_nav .menu_main > ul {
+    display:block;
+    top:0;
+    left:0%;
+    width:65%;
+}
+  
+  .mobile_nav .link_nav {
+    left:65%;
+  }
+  .mobile_nav .link_nav:before {
+    content:"« ";
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header clearfix">
+      <div class="logo">.Simpliste</div>
+
+      <nav class="menu_main">
+        <a href="#go_nav" class="link_nav">Menu</a>
+        <ul id="go_nav">
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="#">Skins</a></li>
+          <li><a href="#">Samples</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="info">
+      <article class="hero clearfix">
+        <div class="col_100">
+          <h1>Flyout navigation</h1>
+          <p>Imagine having a button on page clicking on which would slide navigation from side of the browser window, moving content of the page in the same direction, so that you won't lose the context.</p>
+          
+          <p>This approach requires a little bit of Javascript.</p>
+          
+          <p>Try <strong>changing width of your browser window</strong> to see this method in action. And use the <strong>source code of this page</strong> as your guide.</p>
+        </div>
+      </article>
+
+
+      <article class="article clearfix">
+        <div class="col_66">
+          <h2>HTML</h2>
+          <p>
+            Add a link in your header with <strong>link_nav</strong> class. Name it as you like. It's <strong>Menu</strong> in this demo. Use <strong>#go_nav</strong> href value on the link and id <strong>go_nav</strong> on the menu itself if your menu has too many items.
+          </p> 
+        
+          <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;nav</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"menu_main"</span><span class="sh_keyword">&gt;</span></li><li>  <span class="sh_keyword">&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#go_nav"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"link_nav"</span><span class="sh_keyword">&gt;</span>Menu<span class="sh_keyword">&lt;/a&gt;</span></li><li>  <span class="sh_keyword">&lt;ul</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"go_nav"</span><span class="sh_keyword">&gt;</span></li><li>    <span class="sh_keyword">&lt;li</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"active"</span><span class="sh_keyword">&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>About<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>    <span class="sh_keyword">&lt;li&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>Skins<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>    <span class="sh_keyword">&lt;li&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>Samples<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>    <span class="sh_keyword">&lt;li&gt;&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"#"</span><span class="sh_keyword">&gt;</span>Contacts<span class="sh_keyword">&lt;/a&gt;&lt;/li&gt;</span></li><li>  <span class="sh_keyword">&lt;/ul&gt;</span></li><li><span class="sh_keyword">&lt;/nav&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">&lt;nav class="menu_main"&gt;
+            &lt;a href="#go_nav" class="link_nav"&gt;Menu&lt;/a&gt;
+            &lt;ul id="go_nav"&gt;
+              &lt;li class="active"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Skins&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Samples&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;</pre></div></div>
+      
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="col_66">        
+          <h2>CSS</h2>
+          <p>You will need more CSS than scripts to make this work. And on Webkit browsers flyout happens with animation, using CSS transitions.</p>
+          
+          <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_css snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_selector">.link_nav</span> <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">display:</span><span class="sh_value">none</span>;</li><li><span class="sh_cbracket">}</span></li><li><span class="sh_selector">.link_nav</span><span class="sh_symbol">:</span>before <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">content:</span>"» ";</li><li><span class="sh_cbracket">}</span></li><li>  </li><li>@media only screen and <span class="sh_symbol">(</span>max<span class="sh_symbol">-</span>width<span class="sh_symbol">:</span>480px<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span> <span class="sh_comment">/* Smartphone custom styles */</span></li><li>  <span class="sh_value">.js</span> <span class="sh_value">.link_nav</span> {</li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>    <span class="sh_property">position:</span><span class="sh_value">fixed</span>;</li><li>    <span class="sh_property">left:</span><span class="sh_value">0px</span>;</li><li>    <span class="sh_property">top:</span><span class="sh_value">5px</span>;</li><li>    <span class="sh_property">margin:</span> <span class="sh_value">0</span> <span class="sh_value">0</span> <span class="sh_value">0</span> <span class="sh_value">-1px</span>;</li><li>    </li><li>    <span class="sh_property">background:</span><span class="sh_string">#fff</span>;</li><li>    <span class="sh_property">background:</span><span class="sh_value">rgba</span>(<span class="sh_value">255</span>,<span class="sh_value">255</span>,<span class="sh_value">255</span>,<span class="sh_value">0.9</span>);</li><li>    <span class="sh_property">border:</span><span class="sh_value">1px</span> <span class="sh_value">solid</span> <span class="sh_string">#666</span>;</li><li>    <span class="sh_property">border:</span><span class="sh_value">1px</span> <span class="sh_value">solid</span> <span class="sh_value">rgba</span>(<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0.6</span>);</li><li>    <span class="sh_property">border-left:</span> <span class="sh_value">0</span> <span class="sh_value">none</span>;    </li><li>    <span class="sh_property">z-index:</span> <span class="sh_value">100</span>;    </li><li>    </li><li>    <span class="sh_property">-moz-transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>; </li><li>    <span class="sh_property">-webkit-transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>;  </li><li>    <span class="sh_property">-ms-transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>;  </li><li>    <span class="sh_property">-o-transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>;  </li><li>    <span class="sh_property">transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>;</li><li>  <span class="sh_cbracket">}</span></li><li></li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.menu_main</span> <span class="sh_symbol">&gt;</span> ul <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">position:</span><span class="sh_value">fixed</span>;</li><li>    <span class="sh_property">width:</span><span class="sh_value">65%</span>;</li><li>    <span class="sh_property">left:</span><span class="sh_value">-65%</span>;</li><li>    <span class="sh_property">top:</span><span class="sh_value">0</span>;</li><li>    <span class="sh_property">margin-left:</span><span class="sh_value">-1px</span>;</li><li>    </li><li>    <span class="sh_property">background:</span><span class="sh_string">#fff</span>;</li><li>    <span class="sh_property">background:</span><span class="sh_value">rgba</span>(<span class="sh_value">255</span>,<span class="sh_value">255</span>,<span class="sh_value">255</span>,<span class="sh_value">0.9</span>);</li><li>    <span class="sh_property">border:</span><span class="sh_value">1px</span> <span class="sh_value">solid</span> <span class="sh_string">#666</span>;</li><li>    <span class="sh_property">border:</span><span class="sh_value">1px</span> <span class="sh_value">solid</span> <span class="sh_value">rgba</span>(<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0.6</span>);</li><li>    <span class="sh_property">border-left:</span><span class="sh_value">0</span>;</li><li>    </li><li>    <span class="sh_property">-moz-transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>; </li><li>    <span class="sh_property">-webkit-transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>;  </li><li>    <span class="sh_property">-ms-transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>;  </li><li>    <span class="sh_property">-o-transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>;  </li><li>    <span class="sh_property">transition:</span> <span class="sh_value">all</span> <span class="sh_value">1s</span>;</li><li>  <span class="sh_cbracket">}</span>  </li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.menu_main</span> ul li <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>    <span class="sh_property">text-align:</span><span class="sh_value">left</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  <span class="sh_comment">/* Second level menu */</span></li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.menu_main</span> ul ul <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>    <span class="sh_property">margin-left:</span><span class="sh_value">1.5em</span>;</li><li>    <span class="sh_property">position:</span><span class="sh_value">static</span>;</li><li>  <span class="sh_cbracket">}</span>  </li><li>  </li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.header</span><span class="sh_symbol">,</span></li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.info</span><span class="sh_symbol">,</span></li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.footer</span> <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">width:</span><span class="sh_value">96%</span>;</li><li>    <span class="sh_property">margin-left:</span><span class="sh_value">0%</span>;</li><li>    </li><li>    <span class="sh_property">-moz-transition:</span> <span class="sh_value">margin</span> <span class="sh_value">1s</span>; </li><li>    <span class="sh_property">-webkit-transition:</span> <span class="sh_value">margin</span> <span class="sh_value">1s</span>;  </li><li>    <span class="sh_property">-ms-transition:</span> <span class="sh_value">margin</span> <span class="sh_value">1s</span>;  </li><li>    <span class="sh_property">-o-transition:</span> <span class="sh_value">margin</span> <span class="sh_value">1s</span>;  </li><li>    <span class="sh_property">transition:</span> <span class="sh_value">margin</span> <span class="sh_value">1s</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  </li><li>  <span class="sh_comment">/* Navigation is opened */</span></li><li>  <span class="sh_selector">.mobile_nav</span> <span class="sh_selector">.container</span> <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">overflow-x:</span> <span class="sh_value">hidden</span>;</li><li>    <span class="sh_property">width:</span><span class="sh_value">100%</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  <span class="sh_selector">.mobile_nav</span> <span class="sh_selector">.header</span><span class="sh_symbol">,</span></li><li>  <span class="sh_selector">.mobile_nav</span> <span class="sh_selector">.info</span><span class="sh_symbol">,</span></li><li>  <span class="sh_selector">.mobile_nav</span> <span class="sh_selector">.footer</span> <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">margin-left:</span> <span class="sh_value">70%</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.mobile_nav</span> <span class="sh_selector">.menu_main</span> <span class="sh_symbol">&gt;</span> ul <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>    <span class="sh_property">top:</span><span class="sh_value">0</span>;</li><li>    <span class="sh_property">left:</span><span class="sh_value">0%</span>;</li><li>    <span class="sh_property">width:</span><span class="sh_value">65%</span>;</li><li><span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.mobile_nav</span> <span class="sh_selector">.link_nav</span> <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">left:</span><span class="sh_value">65%</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  <span class="sh_selector">.mobile_nav</span> <span class="sh_selector">.link_nav</span><span class="sh_symbol">:</span>before <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">content:</span>"« ";</li><li>  <span class="sh_cbracket">}</span></li><li>}</li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">.link_nav {
+            display:none;
+          }
+          .link_nav:before {
+            content:"» ";
+          }
+            
+          @media only screen and (max-width:480px) { /* Smartphone custom styles */
+            .js .link_nav {
+              display:block;
+              position:fixed;
+              left:0px;
+              top:5px;
+              margin: 0 0 0 -1px;
+              
+              background:#fff;
+              background:rgba(255,255,255,0.9);
+              border:1px solid #666;
+              border:1px solid rgba(0,0,0,0.6);
+              border-left: 0 none;    
+              z-index: 100;    
+              
+              -moz-transition: all 1s; 
+              -webkit-transition: all 1s;  
+              -ms-transition: all 1s;  
+              -o-transition: all 1s;  
+              transition: all 1s;
+            }
+
+            .js .menu_main &gt; ul {
+              position:fixed;
+              width:65%;
+              left:-65%;
+              top:0;
+              margin-left:-1px;
+              
+              background:#fff;
+              background:rgba(255,255,255,0.9);
+              border:1px solid #666;
+              border:1px solid rgba(0,0,0,0.6);
+              border-left:0;
+              
+              -moz-transition: all 1s; 
+              -webkit-transition: all 1s;  
+              -ms-transition: all 1s;  
+              -o-transition: all 1s;  
+              transition: all 1s;
+            }  
+            .js .menu_main ul li {
+              display:block;
+              text-align:left;
+            }
+            /* Second level menu */
+            .js .menu_main ul ul {
+              display:block;
+              margin-left:1.5em;
+              position:static;
+            }  
+            
+            .js .header,
+            .js .info,
+            .js .footer {
+              width:96%;
+              margin-left:0%;
+              
+              -moz-transition: margin 1s; 
+              -webkit-transition: margin 1s;  
+              -ms-transition: margin 1s;  
+              -o-transition: margin 1s;  
+              transition: margin 1s;
+            }
+            
+            
+            /* Navigation is opened */
+            .mobile_nav .container {
+              overflow-x: hidden;
+              width:100%;
+            }
+            .mobile_nav .header,
+            .mobile_nav .info,
+            .mobile_nav .footer {
+              margin-left: 70%;
+            }
+            
+            .mobile_nav .menu_main &gt; ul {
+              display:block;
+              top:0;
+              left:0%;
+              width:65%;
+          }
+            
+            .mobile_nav .link_nav {
+              left:65%;
+            }
+            .mobile_nav .link_nav:before {
+              content:"« ";
+            }
+          }</pre></div></div>       
+          
+        </div>
+        
+        <div class="col_33">
+          <h2>CSS for too long menu</h2>
+          <p>In this demo there is not many links in navigation. So using fixed positioning can't hurt. But if your menu will be tall, you will need to use absolute positioning on <strong>.js .menu_main > ul</strong>, so it will be possible to scroll the page.</p>
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_css snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_selector">.js</span> <span class="sh_selector">.menu_main</span> <span class="sh_symbol">&gt;</span> ul <span class="sh_cbracket">{</span></li><li><span class="sh_property">position:</span><span class="sh_value">absolute</span>;</li><li><span class="sh_cbracket">}</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">.js .menu_main &gt; ul {
+position:absolute;
+}</pre></div></div>
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="col_66">
+          <h2>Javascript</h2>
+          
+          <p>Don't forget to include jQuery</p>
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"&gt;&lt;/script&gt;</pre></div></div>
+          
+          <p>And make it work</p>
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ol class="snippet-num"><li>$<span class="sh_symbol">(</span></li><li>  <span class="sh_keyword">function</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">"body"</span><span class="sh_symbol">).</span><span class="sh_function">addClass</span><span class="sh_symbol">(</span><span class="sh_string">"js"</span><span class="sh_symbol">);</span></li><li>  </li><li>    $<span class="sh_symbol">(</span><span class="sh_string">".link_nav"</span><span class="sh_symbol">).</span><span class="sh_function">click</span><span class="sh_symbol">(</span></li><li>      <span class="sh_keyword">function</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>        $<span class="sh_symbol">(</span><span class="sh_string">"body"</span><span class="sh_symbol">).</span><span class="sh_function">toggleClass</span><span class="sh_symbol">(</span><span class="sh_string">"mobile_nav"</span><span class="sh_symbol">);</span></li><li>      <span class="sh_cbracket">}</span></li><li>    <span class="sh_symbol">);</span></li><li>  <span class="sh_cbracket">}</span></li><li><span class="sh_symbol">)</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">$(
+  function(){
+    $("body").addClass("js");
+  
+    $(".link_nav").click(
+      function(){
+        $("body").toggleClass("mobile_nav");
+      }
+    );
+  }
+)
+</pre></div></div>
+          
+          
+        </div>
+        
+        <div class="clearfix"></div>
+
+      </article>
+    </div>
+    
+    <footer class="footer clearfix">
+      <div class="copyright"><a href="http://cssr.ru/simpliste/">Keep it simplest</a></div>
+
+      <nav class="menu_bottom">
+        <ul>
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="#">Skins</a></li>
+          <li><a href="#">Samples</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </div>
+  
+<!-- Don't copy. For demo only -->
+<link rel="stylesheet" href="http://syntaxhighlight.in/shi/css/shi_default.min.css">
+<script src="http://syntaxhighlight.in/shi/js/shi_jquery.min.js"></script>
+</body>
+</html>

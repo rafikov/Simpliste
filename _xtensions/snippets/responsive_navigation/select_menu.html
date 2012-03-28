@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="../../../_www/css/style.css">
+  <title></title>  
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="jquery.mobilemenu.min.js"></script>
+<script>
+$(
+  function(){
+    $('.menu_main ul').mobileMenu({
+      //combine: true,
+      //groupPageText: "Main",
+      nested: true,
+      prependTo: ".menu_main",
+      switchWidth: 480,
+      topOptionText: "Menu"
+    });
+  }
+)
+</script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header clearfix">
+      <div class="logo">.Simpliste</div>
+
+      <nav class="menu_main">
+        <ul>
+          <li class="active"><a href="#1">About</a></li>
+          <li><a href="#2">Skins</a></li>
+          <li><a href="#3">Samples</a></li>
+          <li><a href="#4">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="info">
+      <article class="hero clearfix">
+        <div class="col_100">
+          <h1>Replace menu with select input</h1>
+          <p>Sometimes it's better to use native browser controls for certain tasks. And maybe creating navigation on mobile devices is one of those times. Script goes through your menu and creates a select input.</p>
+          
+          <p>This solution relies on Javascript, so don't forget to think about fallback styles.</p>
+          
+          <p>Try <strong>changing width of your browser window</strong> to see this method in action. And use the <strong>source code of this page</strong> as your guide.</p>
+        </div>
+      </article>
+
+
+      <article class="article clearfix">
+        <div class="col_66">
+          <h2>Javascript</h2>
+          <p>Don't forget to include jQuery</p>
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"&gt;&lt;/script&gt;</pre></div></div>
+          
+          <p>Include a link to a small <a href="https://github.com/mattkersley/Responsive-Menu">Responsive Menu plugin</a>.</p>
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"jquery.mobilemenu.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">&lt;script src="jquery.mobilemenu.min.js"&gt;&lt;/script&gt;</pre></div></div>
+          
+          <p>Call the script on navigation element (<strong>.menu_main ul</strong> in this demo) and change defaults if needed.</p>
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ol class="snippet-num"><li>$<span class="sh_symbol">(</span></li><li>  <span class="sh_keyword">function</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">'.menu_main ul'</span><span class="sh_symbol">).</span><span class="sh_function">mobileMenu</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span></li><li>      <span class="sh_comment">//combine: true,</span></li><li>      <span class="sh_comment">//groupPageText: "Main",</span></li><li>      nested<span class="sh_symbol">:</span> <span class="sh_keyword">true</span><span class="sh_symbol">,</span></li><li>      prependTo<span class="sh_symbol">:</span> <span class="sh_string">".menu_main"</span><span class="sh_symbol">,</span></li><li>      switchWidth<span class="sh_symbol">:</span> <span class="sh_number">480</span><span class="sh_symbol">,</span></li><li>      topOptionText<span class="sh_symbol">:</span> <span class="sh_string">"Menu"</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>  <span class="sh_cbracket">}</span></li><li><span class="sh_symbol">)</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">$(
+  function(){
+    $('.menu_main ul').mobileMenu({
+      //combine: true,
+      //groupPageText: "Main",
+      nested: true,
+      prependTo: ".menu_main",
+      switchWidth: 480,
+      topOptionText: "Menu"
+    });
+  }
+)</pre></div></div>
+
+        </div>
+
+
+        <div class="clearfix"></div>
+
+      </article>
+    </div>
+    
+    <footer class="footer clearfix">
+      <div class="copyright"><a href="http://cssr.ru/simpliste/">Keep it simplest</a></div>
+
+      <nav class="menu_bottom">
+        <ul>
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="#">Skins</a></li>
+          <li><a href="#">Samples</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </div>
+  
+<!-- Don't copy. For demo only -->
+<link rel="stylesheet" href="http://syntaxhighlight.in/shi/css/shi_default.min.css">
+<script src="http://syntaxhighlight.in/shi/js/shi_jquery.min.js"></script>
+</body>
+</html>

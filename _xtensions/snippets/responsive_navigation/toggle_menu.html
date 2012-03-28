@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="../../../_www/css/style.css">
+  <title></title>  
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+var menuText = "Menu";
+
+$(
+  function(){
+    $("body").addClass("js");
+
+    $(".menu_main").prepend("<a href='#' class='link_nav'>"+ menuText +"</a>");
+    
+    $(".menu_main li:has(ul)").addClass("menu_parent");
+    
+    $(".link_nav").click(
+      function(){
+        $(".menu_main > ul").toggleClass("menu_expanded");
+        $(this).toggleClass("menu_parent_exp");
+        return false;
+      }
+    )
+    $(".menu_parent").click(
+      function(){
+        $(this).find(">ul").toggleClass("menu_expanded");
+        $(this).toggleClass("menu_parent_exp");
+        return false;
+      }
+    )    
+  }
+)
+</script>
+<style>
+/* Dropdown menu */
+.menu_main li {
+  position:relative;
+}
+.menu_main li ul {
+  display:none;
+  background:#fff;
+  padding:10px 3px;
+  border:1px solid #ddd;
+  text-align:left;
+  width:6em;
+  -webkit-box-shadow:rgba(0,0,0,0.2) 0px 4px 6px;
+  -moz-box-shadow:rgba(0,0,0,0.2) 0px 4px 6px;
+  box-shadow:rgba(0,0,0,0.2) 0px 4px 6px;
+}
+.menu_main li ul li {
+  display:block;
+  margin:0;
+  line-height:1.1;
+}
+.menu_main li ul a{
+  display:block;
+  padding:3px;
+}
+.menu_main li ul a:hover{
+  background:#f1f1f1;
+}
+.menu_main li:hover ul {
+  display:block;
+  position:absolute;
+  right:-1em;
+  top:100%;
+}
+/* End dropdown menu */
+
+.menu_parent ul {
+  display:none;
+}
+  
+.link_nav {
+  display:none;
+  color: #fff;
+  background:#666;
+  text-align:left;
+  text-decoration:none;
+}
+.link_nav:after {
+  content:"▼";
+}
+
+  
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+  .menu_main > ul {
+    border-bottom:1px solid #666;
+    background:#fff;
+  }
+
+  .menu_main li ul,
+  .menu_main li:hover ul {
+    display:block;
+    position:static;
+    background:#fff;
+    padding:0;
+    border:0;
+    text-align:left;
+    width:auto;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+    width:auto;
+  }
+
+  .menu_main li{
+    display:block;
+    text-align:left;
+    width:auto;
+    margin:0;
+    padding:0;
+    border:1px solid #666;
+    border-bottom:0;
+    line-height:1.2;
+  }
+  .menu_main li:hover{
+    background:#f1f1f1;
+  }
+  .menu_main li.active:hover{
+    background:transparent;
+  }
+  
+  .menu_main li li {
+    border:0;
+    border-top:1px solid #666;
+    line-height:1.2;
+    background:#F9F9F9;
+  }
+  
+  .menu_main li a,
+  .menu_main li ul a {
+    display:block;
+    padding:12px;
+    margin-right:30px;
+  }
+  
+  .menu_main li ul a {
+      padding-left:26px;
+  }
+  .menu_main li ul a:hover {
+    background:transparent;
+  }
+  
+  .menu_main li ul ul a {
+    padding-left:36px;
+  }
+  
+  a.link_nav {
+    display:none;
+  }
+  
+  .js a.link_nav {
+    display:block;
+  }
+  
+  .js .menu_main ul,
+  .js .menu_main li:hover ul  {
+    display:none;
+  }
+  
+  .js .menu_main ul.menu_expanded,
+  .js .menu_main li:hover ul.menu_expanded {
+    display:block;
+  }
+  
+  .menu_parent:after {
+    content:"▼";
+    position:absolute;
+    right:10px;
+    top:0.9em;
+  }
+  
+  .menu_parent_exp:after {
+    content:"▲";
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header clearfix">
+      <div class="logo">.Simpliste</div>
+
+      <nav class="menu_main">
+        <ul>
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="#">Skins</a>
+            <ul>
+              <li><a href="#">Simple</a></li>
+              <li><a href="#">iSimple</a></li>
+              <li><a href="#">Simploid</a></li>
+              <li><a href="#">Simple Soft</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Samples</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="info">
+      <article class="hero clearfix">
+        <div class="col_100">
+          <h1>Toggling navigation</h1>
+          <p>If navigation on your site is complicated and even has submenus, it's better not to show everything on the top of the page when user with mobile device comes to your site. We can hide menu and open levels of navigation on click.</p>
+          
+          <p>Try <strong>changing width of your browser window</strong> to see this method in action. And use the <strong>source code of this page</strong> as your guide.</p>
+        </div>
+      </article>
+
+
+      <article class="article clearfix">
+        <div class="col_66">
+          <h2>CSS</h2>
+          <p>We will use one of the code snippets available for Simpliste HTML5 template. It's CSS dropdown menu /_xtensions/snippets/dropdown_menu.txt</p>
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_css snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_comment">/* Dropdown menu */</span></li><li><span class="sh_selector">.menu_main</span> li <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">position:</span><span class="sh_value">relative</span>;</li><li><span class="sh_cbracket">}</span></li><li><span class="sh_selector">.menu_main</span> li ul <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">display:</span><span class="sh_value">none</span>;</li><li>  <span class="sh_property">background:</span><span class="sh_string">#fff</span>;</li><li>  <span class="sh_property">padding:</span><span class="sh_value">10px</span> <span class="sh_value">3px</span>;</li><li>  <span class="sh_property">border:</span><span class="sh_value">1px</span> <span class="sh_value">solid</span> <span class="sh_string">#ddd</span>;</li><li>  <span class="sh_property">text-align:</span><span class="sh_value">left</span>;</li><li>  <span class="sh_property">width:</span><span class="sh_value">6em</span>;</li><li>  <span class="sh_property">-webkit-box-shadow:</span><span class="sh_value">rgba</span>(<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0.2</span>) <span class="sh_value">0px</span> <span class="sh_value">4px</span> <span class="sh_value">6px</span>;</li><li>  <span class="sh_property">-moz-box-shadow:</span><span class="sh_value">rgba</span>(<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0.2</span>) <span class="sh_value">0px</span> <span class="sh_value">4px</span> <span class="sh_value">6px</span>;</li><li>  <span class="sh_property">box-shadow:</span><span class="sh_value">rgba</span>(<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0</span>,<span class="sh_value">0.2</span>) <span class="sh_value">0px</span> <span class="sh_value">4px</span> <span class="sh_value">6px</span>;</li><li><span class="sh_cbracket">}</span></li><li><span class="sh_selector">.menu_main</span> li ul li <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>  <span class="sh_property">margin:</span><span class="sh_value">0</span>;</li><li>  <span class="sh_property">line-height:</span><span class="sh_value">1.1</span>;</li><li><span class="sh_cbracket">}</span></li><li><span class="sh_selector">.menu_main</span> li ul a<span class="sh_cbracket">{</span></li><li>  <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>  <span class="sh_property">padding:</span><span class="sh_value">3px</span>;</li><li><span class="sh_cbracket">}</span></li><li><span class="sh_selector">.menu_main</span> li ul a<span class="sh_symbol">:</span>hover<span class="sh_cbracket">{</span></li><li>  <span class="sh_property">background:</span><span class="sh_string">#f1f1f1</span>;</li><li><span class="sh_cbracket">}</span></li><li><span class="sh_selector">.menu_main</span> li<span class="sh_symbol">:</span>hover ul <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>  <span class="sh_property">position:</span><span class="sh_value">absolute</span>;</li><li>  <span class="sh_property">right:</span><span class="sh_value">-1em</span>;</li><li>  <span class="sh_property">top:</span><span class="sh_value">100%</span>;</li><li><span class="sh_cbracket">}</span></li><li><span class="sh_comment">/* End dropdown menu */</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">/* Dropdown menu */
+.menu_main li {
+  position:relative;
+}
+.menu_main li ul {
+  display:none;
+  background:#fff;
+  padding:10px 3px;
+  border:1px solid #ddd;
+  text-align:left;
+  width:6em;
+  -webkit-box-shadow:rgba(0,0,0,0.2) 0px 4px 6px;
+  -moz-box-shadow:rgba(0,0,0,0.2) 0px 4px 6px;
+  box-shadow:rgba(0,0,0,0.2) 0px 4px 6px;
+}
+.menu_main li ul li {
+  display:block;
+  margin:0;
+  line-height:1.1;
+}
+.menu_main li ul a{
+  display:block;
+  padding:3px;
+}
+.menu_main li ul a:hover{
+  background:#f1f1f1;
+}
+.menu_main li:hover ul {
+  display:block;
+  position:absolute;
+  right:-1em;
+  top:100%;
+}
+/* End dropdown menu */
+</pre></div></div>
+          
+          <p>Now we will add some styles specific for toggle navigation on mobile phones. You can indicate submenus by using background images instead of pseudo elements (in this demo ▼).</p>
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_css snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_selector">.menu_parent</span> ul <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">display:</span><span class="sh_value">none</span>;</li><li><span class="sh_cbracket">}</span></li><li>  </li><li><span class="sh_selector">.link_nav</span> <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">display:</span><span class="sh_value">none</span>;</li><li>  <span class="sh_property">color:</span> <span class="sh_string">#fff</span>;</li><li>  <span class="sh_property">background:</span><span class="sh_string">#666</span>;</li><li>  <span class="sh_property">text-align:</span><span class="sh_value">left</span>;</li><li>  <span class="sh_property">text-decoration:</span><span class="sh_value">none</span>;</li><li><span class="sh_cbracket">}</span></li><li><span class="sh_selector">.link_nav</span><span class="sh_symbol">:</span>after <span class="sh_cbracket">{</span></li><li>  <span class="sh_property">content:</span>"▼";</li><li><span class="sh_cbracket">}</span></li><li></li><li>  </li><li>@media only screen and <span class="sh_symbol">(</span>max<span class="sh_symbol">-</span>width<span class="sh_symbol">:</span>480px<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span> <span class="sh_comment">/* Smartphone custom styles */</span></li><li>  <span class="sh_value">.menu_main</span> &gt; <span class="sh_value">ul</span> {</li><li>    <span class="sh_property">border-bottom:</span><span class="sh_value">1px</span> <span class="sh_value">solid</span> <span class="sh_string">#666</span>;</li><li>    <span class="sh_property">background:</span><span class="sh_string">#fff</span>;</li><li>  <span class="sh_cbracket">}</span></li><li></li><li>  <span class="sh_selector">.menu_main</span> li ul<span class="sh_symbol">,</span></li><li>  <span class="sh_selector">.menu_main</span> li<span class="sh_symbol">:</span>hover ul <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>    <span class="sh_property">position:</span><span class="sh_value">static</span>;</li><li>    <span class="sh_property">background:</span><span class="sh_string">#fff</span>;</li><li>    <span class="sh_property">padding:</span><span class="sh_value">0</span>;</li><li>    <span class="sh_property">border:</span><span class="sh_value">0</span>;</li><li>    <span class="sh_property">text-align:</span><span class="sh_value">left</span>;</li><li>    <span class="sh_property">width:</span><span class="sh_value">auto</span>;</li><li>    <span class="sh_property">-webkit-box-shadow:</span><span class="sh_value">none</span>;</li><li>    <span class="sh_property">-moz-box-shadow:</span><span class="sh_value">none</span>;</li><li>    <span class="sh_property">box-shadow:</span><span class="sh_value">none</span>;</li><li>    <span class="sh_property">width:</span><span class="sh_value">auto</span>;</li><li>  <span class="sh_cbracket">}</span></li><li></li><li>  <span class="sh_selector">.menu_main</span> li<span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>    <span class="sh_property">text-align:</span><span class="sh_value">left</span>;</li><li>    <span class="sh_property">width:</span><span class="sh_value">auto</span>;</li><li>    <span class="sh_property">margin:</span><span class="sh_value">0</span>;</li><li>    <span class="sh_property">padding:</span><span class="sh_value">0</span>;</li><li>    <span class="sh_property">border:</span><span class="sh_value">1px</span> <span class="sh_value">solid</span> <span class="sh_string">#666</span>;</li><li>    <span class="sh_property">border-bottom:</span><span class="sh_value">0</span>;</li><li>    <span class="sh_property">line-height:</span><span class="sh_value">1.2</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  <span class="sh_selector">.menu_main</span> li<span class="sh_symbol">:</span>hover<span class="sh_cbracket">{</span></li><li>    <span class="sh_property">background:</span><span class="sh_string">#f1f1f1</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  <span class="sh_selector">.menu_main</span> li<span class="sh_selector">.active</span><span class="sh_symbol">:</span>hover<span class="sh_cbracket">{</span></li><li>    <span class="sh_property">background:</span><span class="sh_value">transparent</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.menu_main</span> li li <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">border:</span><span class="sh_value">0</span>;</li><li>    <span class="sh_property">border-top:</span><span class="sh_value">1px</span> <span class="sh_value">solid</span> <span class="sh_string">#666</span>;</li><li>    <span class="sh_property">line-height:</span><span class="sh_value">1.2</span>;</li><li>    <span class="sh_property">background:</span><span class="sh_string">#F9F9F9</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.menu_main</span> li a<span class="sh_symbol">,</span></li><li>  <span class="sh_selector">.menu_main</span> li ul a <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>    <span class="sh_property">padding:</span><span class="sh_value">12px</span>;</li><li>    <span class="sh_property">margin-right:</span><span class="sh_value">30px</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.menu_main</span> li ul a <span class="sh_cbracket">{</span></li><li>      <span class="sh_property">padding-left:</span><span class="sh_value">26px</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  <span class="sh_selector">.menu_main</span> li ul a<span class="sh_symbol">:</span>hover <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">background:</span><span class="sh_value">transparent</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.menu_main</span> li ul ul a <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">padding-left:</span><span class="sh_value">36px</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  a<span class="sh_selector">.link_nav</span> <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">none</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.js</span> a<span class="sh_selector">.link_nav</span> <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.menu_main</span> ul<span class="sh_symbol">,</span></li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.menu_main</span> li<span class="sh_symbol">:</span>hover ul  <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">none</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.menu_main</span> ul<span class="sh_selector">.menu_expanded</span><span class="sh_symbol">,</span></li><li>  <span class="sh_selector">.js</span> <span class="sh_selector">.menu_main</span> li<span class="sh_symbol">:</span>hover ul<span class="sh_selector">.menu_expanded</span> <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">display:</span><span class="sh_value">block</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.menu_parent</span><span class="sh_symbol">:</span>after <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">content:</span>"▼";</li><li>    <span class="sh_property">position:</span><span class="sh_value">absolute</span>;</li><li>    <span class="sh_property">right:</span><span class="sh_value">10px</span>;</li><li>    <span class="sh_property">top:</span><span class="sh_value">0.9em</span>;</li><li>  <span class="sh_cbracket">}</span></li><li>  </li><li>  <span class="sh_selector">.menu_parent_exp</span><span class="sh_symbol">:</span>after <span class="sh_cbracket">{</span></li><li>    <span class="sh_property">content:</span>"▲";</li><li>  <span class="sh_cbracket">}</span></li><li>}</li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">.menu_parent ul {
+  display:none;
+}
+  
+.link_nav {
+  display:none;
+  color: #fff;
+  background:#666;
+  text-align:left;
+  text-decoration:none;
+}
+.link_nav:after {
+  content:"▼";
+}
+
+  
+@media only screen and (max-width:480px) { /* Smartphone custom styles */
+  .menu_main &gt; ul {
+    border-bottom:1px solid #666;
+    background:#fff;
+  }
+
+  .menu_main li ul,
+  .menu_main li:hover ul {
+    display:block;
+    position:static;
+    background:#fff;
+    padding:0;
+    border:0;
+    text-align:left;
+    width:auto;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+    width:auto;
+  }
+
+  .menu_main li{
+    display:block;
+    text-align:left;
+    width:auto;
+    margin:0;
+    padding:0;
+    border:1px solid #666;
+    border-bottom:0;
+    line-height:1.2;
+  }
+  .menu_main li:hover{
+    background:#f1f1f1;
+  }
+  .menu_main li.active:hover{
+    background:transparent;
+  }
+  
+  .menu_main li li {
+    border:0;
+    border-top:1px solid #666;
+    line-height:1.2;
+    background:#F9F9F9;
+  }
+  
+  .menu_main li a,
+  .menu_main li ul a {
+    display:block;
+    padding:12px;
+    margin-right:30px;
+  }
+  
+  .menu_main li ul a {
+      padding-left:26px;
+  }
+  .menu_main li ul a:hover {
+    background:transparent;
+  }
+  
+  .menu_main li ul ul a {
+    padding-left:36px;
+  }
+  
+  a.link_nav {
+    display:none;
+  }
+  
+  .js a.link_nav {
+    display:block;
+  }
+  
+  .js .menu_main ul,
+  .js .menu_main li:hover ul  {
+    display:none;
+  }
+  
+  .js .menu_main ul.menu_expanded,
+  .js .menu_main li:hover ul.menu_expanded {
+    display:block;
+  }
+  
+  .menu_parent:after {
+    content:"▼";
+    position:absolute;
+    right:10px;
+    top:0.9em;
+  }
+  
+  .menu_parent_exp:after {
+    content:"▲";
+  }
+}</pre></div></div>
+          
+          <h2>Javascript</h2>
+          
+          <p>Don't forget to include jQuery</p>
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display: none;" tabindex="0" contenteditable="">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"&gt;&lt;/script&gt;</pre></div></div>
+          
+          <p>And code to make the work. You can customize label on the open button, in this demo it's <strong>Menu</strong>.</p>
+          
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_css snippet-formatted sh_sourceCode"><ol class="snippet-num"><li>var menuText <span class="sh_symbol">=</span> "Menu"<span class="sh_symbol">;</span></li><li></li><li>$<span class="sh_symbol">(</span></li><li>  function<span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>    $("<span class="sh_value">body</span>")<span class="sh_value">.addClass</span>("<span class="sh_value">js</span>");</li><li></li><li>    $("<span class="sh_value">.menu_main</span>")<span class="sh_value">.prepend</span>("&lt;<span class="sh_value">a</span> <span class="sh_value">href</span>='#' <span class="sh_value">class</span>='<span class="sh_value">link_nav</span>'&gt;"+ <span class="sh_value">menuText</span> +"&lt;/<span class="sh_value">a</span>&gt;");</li><li>    </li><li>    $("<span class="sh_value">.menu_main</span> <span class="sh_property">li:</span><span class="sh_value">has</span>(<span class="sh_value">ul</span>)")<span class="sh_value">.addClass</span>("<span class="sh_value">menu_parent</span>");</li><li>    </li><li>    $("<span class="sh_value">.link_nav</span>")<span class="sh_value">.click</span>(</li><li>      <span class="sh_value">function</span>(){</li><li>        $("<span class="sh_value">.menu_main</span> &gt; <span class="sh_value">ul</span>")<span class="sh_value">.toggleClass</span>("<span class="sh_value">menu_expanded</span>");</li><li>        $(<span class="sh_value">this</span>)<span class="sh_value">.toggleClass</span>("<span class="sh_value">menu_parent_exp</span>");</li><li>        <span class="sh_value">return</span> <span class="sh_value">false</span>;</li><li>      <span class="sh_cbracket">}</span></li><li>    <span class="sh_symbol">)</span></li><li>    $<span class="sh_symbol">(</span>"<span class="sh_selector">.menu_parent</span>"<span class="sh_symbol">)</span><span class="sh_selector">.click</span><span class="sh_symbol">(</span></li><li>      function<span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>        $(<span class="sh_value">this</span>)<span class="sh_value">.find</span>("&gt;<span class="sh_value">ul</span>")<span class="sh_value">.toggleClass</span>("<span class="sh_value">menu_expanded</span>");</li><li>        $(<span class="sh_value">this</span>)<span class="sh_value">.toggleClass</span>("<span class="sh_value">menu_parent_exp</span>");</li><li>        <span class="sh_value">return</span> <span class="sh_value">false</span>;</li><li>      <span class="sh_cbracket">}</span></li><li>    <span class="sh_symbol">)</span>    </li><li>  }</li><li><span class="sh_symbol">)</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">var menuText = "Menu";
+
+$(
+  function(){
+    $("body").addClass("js");
+
+    $(".menu_main").prepend("&lt;a href='#' class='link_nav'&gt;"+ menuText +"&lt;/a&gt;");
+    
+    $(".menu_main li:has(ul)").addClass("menu_parent");
+    
+    $(".link_nav").click(
+      function(){
+        $(".menu_main &gt; ul").toggleClass("menu_expanded");
+        $(this).toggleClass("menu_parent_exp");
+        return false;
+      }
+    )
+    $(".menu_parent").click(
+      function(){
+        $(this).find("&gt;ul").toggleClass("menu_expanded");
+        $(this).toggleClass("menu_parent_exp");
+        return false;
+      }
+    )    
+  }
+)</pre></div></div>
+          
+        </div>
+
+
+        <div class="clearfix"></div>
+
+      </article>
+    </div>
+    
+    <footer class="footer clearfix">
+      <div class="copyright"><a href="http://cssr.ru/simpliste/">Keep it simplest</a></div>
+
+      <nav class="menu_bottom">
+        <ul>
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="#">Skins</a></li>
+          <li><a href="#">Samples</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </div>
+  
+<!-- Don't copy. For demo only -->
+<link rel="stylesheet" href="http://syntaxhighlight.in/shi/css/shi_default.min.css">
+<script src="http://syntaxhighlight.in/shi/js/shi_jquery.min.js"></script>
+</body>
+</html>
